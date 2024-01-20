@@ -5,6 +5,14 @@
   align-items: center;
 }
 
+@mixin display-flex-c {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
 // @mixin background {
 //   background: url("../assets/images/matematicas.jpg");
 //   background-repeat: no-repeat;

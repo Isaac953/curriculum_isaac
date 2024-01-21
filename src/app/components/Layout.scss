@@ -43,6 +43,13 @@ main {
   width: 20vw;
   border: 1px solid green;
   background-color: $contactColor;
+  @include display-flex;
+  justify-content: flex-start;
+}
+
+hr{
+  border: 1px solid white;
+  border-radius: 5px;
 }
 
 .main-experience{

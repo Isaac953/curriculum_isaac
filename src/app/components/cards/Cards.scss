@@ -1,3 +1,5 @@
+@import "/src/app/styles/Flex.scss";
+
 .photo-cv{
     width: 90%;
 }
@@ -5,4 +7,34 @@
 .photo-cv img{
     width: 155px;
     margin: 15px 0px;
+}
+
+.contact{
+    @include display-flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 90%;
+    margin: 15px 0px;
+}
+
+.contact div{
+    // border: 1px solid white;
+    @include display-flex-c;
+    justify-content: center;
+}
+
+h2{
+    text-align: center;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.contact span{
+    font-size: 14px;
+    width: 100%;
+}
+
+.font-icon{
+    width: 30px;
+    margin: 5px;
 }

@@ -6,7 +6,6 @@ export const Photo = () => {
   return (
     <figure className='photo-cv'>
         <img src={logo} alt="Logo" />
-        <hr></hr>
     </figure>
   )
 }

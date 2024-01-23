@@ -15,3 +15,4 @@ Proyecto creado en React.
 ## 03 Contact
 
 - CV_05: **Trabajar la sección de datos de contacto**.
+- CV_06: **Agregar enlaces en algunos elementos de la lista**.

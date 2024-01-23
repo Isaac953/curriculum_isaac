@@ -5,7 +5,7 @@
 }
 
 .photo-cv img{
-    width: 155px;
+    width: 150px;
     margin: 15px 0px;
 }
 
@@ -33,6 +33,17 @@ h2{
     font-size: 14px;
     width: 100%;
 }
+
+.contact a {
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+
+.contact a:visited {
+    color: white;
+  }
 
 .font-icon{
     width: 30px;

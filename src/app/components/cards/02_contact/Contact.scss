@@ -1,0 +1,43 @@
+@import "/src/app/styles/Flex.scss";
+@import "/src/app/styles/Colors.scss";
+
+.contact-card{
+    @include display-flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 90%;
+    margin: 15px 0px;
+}
+
+.contact-card div{
+    // border: 1px solid white;
+    @include display-flex-c;
+    justify-content: center;
+}
+
+h2{
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.contact-card span{
+    font-size: 14px;
+    width: 100%;
+}
+
+.contact-card a {
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+
+.contact-card a:visited {
+    color: white;
+  }
+
+.font-icon{
+    width: 30px;
+    margin: 5px;
+}

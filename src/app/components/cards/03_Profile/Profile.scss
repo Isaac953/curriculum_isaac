@@ -1,0 +1,24 @@
+@import "/src/app/styles/Flex.scss";
+@import "/src/app/styles/Colors.scss";
+
+
+.profile-card {
+    width: 100%;
+    background-color: $profileColor;
+    margin: 15px 0px;
+    padding-bottom: 15px;
+    @include display-flex;
+    align-items: flex-start;
+    span{
+        margin-left: 20px;
+    }
+    .name{
+        font-size: 42px;
+        font-weight: bold;
+        color: white;
+    }
+    .title{
+        font-size: 24px;
+        color: white;
+    }
+}

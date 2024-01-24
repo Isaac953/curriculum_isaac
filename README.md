@@ -20,3 +20,7 @@ Proyecto creado en React.
 ## 04 Profile
 
 - CV_07: **Nombre y titulo agregados al CV**.
+
+## 05 About
+
+- CV_08: **Descripción sobre mí agregados al CV**.

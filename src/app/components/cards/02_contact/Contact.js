@@ -8,7 +8,7 @@ import {
   faFileLines,
 } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import "./Cards.scss";
+import "./Contact.scss";
 import Link from "next/link";
 
 let contactData = [

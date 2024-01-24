@@ -1,5 +1,5 @@
 import React from 'react';
-import "./Cards.scss";
+import "./Photo.scss";
 
 export const Photo = () => {
     let logo = '../img/photo_cv.jpg'

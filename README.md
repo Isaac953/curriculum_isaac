@@ -16,3 +16,7 @@ Proyecto creado en React.
 
 - CV_05: **Trabajar la sección de datos de contacto**.
 - CV_06: **Agregar enlaces en algunos elementos de la lista**.
+
+## 04 Profile
+
+- CV_07: **Nombre y titulo agregados al CV**.

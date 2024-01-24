@@ -1,15 +1,16 @@
 @import "/src/app/styles/Flex.scss";
+@import "/src/app/styles/Colors.scss";
 
-.photo-cv{
+.photo-card{
     width: 90%;
 }
 
-.photo-cv img{
+.photo-card img{
     width: 150px;
     margin: 15px 0px;
 }
 
-.contact{
+.contact-card{
     @include display-flex;
     align-items: flex-start;
     justify-content: center;
@@ -17,7 +18,7 @@
     margin: 15px 0px;
 }
 
-.contact div{
+.contact-card div{
     // border: 1px solid white;
     @include display-flex-c;
     justify-content: center;
@@ -29,23 +30,44 @@ h2{
     margin-bottom: 5px;
 }
 
-.contact span{
+.contact-card span{
     font-size: 14px;
     width: 100%;
 }
 
-.contact a {
+.contact-card a {
     font-size: 14px;
     cursor: pointer;
     text-decoration: none;
     color: white;
 }
 
-.contact a:visited {
+.contact-card a:visited {
     color: white;
   }
 
 .font-icon{
     width: 30px;
     margin: 5px;
+}
+
+.profile-card {
+    width: 100%;
+    background-color: $profileColor;
+    margin: 15px 0px;
+    padding-bottom: 15px;
+    @include display-flex;
+    align-items: flex-start;
+    span{
+        margin-left: 20px;
+    }
+    .name{
+        font-size: 46px;
+        font-weight: bold;
+        color: white;
+    }
+    .title{
+        font-size: 26px;
+        color: white;
+    }
 }

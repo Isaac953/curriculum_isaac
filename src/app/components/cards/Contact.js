@@ -49,7 +49,7 @@ let contactData = [
 
 export const Contact = () => {
   return (
-    <section className="contact">
+    <section className="contact-card">
       <h2>Contacto</h2>
       {contactData.map((item) => (
         <div key={item.id}>

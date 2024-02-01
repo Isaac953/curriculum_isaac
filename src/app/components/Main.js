@@ -1,4 +1,6 @@
-import React from "react";
+"use client";
+
+import React, { useRef } from "react";
 import "./Layout.scss";
 import { Photo } from "./cards/01_photo/Photo";
 import { Contact } from "./cards/02_contact/Contact";
@@ -6,9 +8,10 @@ import { Profile } from "./cards/03_Profile/Profile";
 import { About } from "./cards/04_about/About";
 
 export const Main = () => {
+
   return (
     <main>
-      <section className="main-contact">
+    <section className="main-contact">
         <Photo />
         <hr></hr>
         <Contact />
@@ -19,7 +22,8 @@ export const Main = () => {
         <hr className="hr-bg"></hr>
         <About />
         <hr className="hr-bg"></hr>
-      </section>
+      </section>  
     </main>
+    
   );
 };

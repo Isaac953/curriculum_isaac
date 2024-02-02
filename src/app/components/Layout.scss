@@ -79,3 +79,20 @@ footer {
   }
 }
 /*End Footer Styles*/
+
+@media print {
+  header{display:none;}
+  footer{display:none;}
+  
+  * {
+    -webkit-print-color-adjust: exact;
+  }
+
+  .main-contact{
+    width: 30%;
+  }
+
+  .main-experience{
+    width: 70%;
+  }
+}

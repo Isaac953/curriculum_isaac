@@ -24,3 +24,4 @@ Proyecto creado en React.
 ## 05 About
 
 - CV_08: **Descripción sobre mí agregados al CV**.
+- CV_09: **Implementar guardar proyecto en archivo PDF**.

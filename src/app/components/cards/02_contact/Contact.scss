@@ -22,14 +22,15 @@ h2{
 }
 
 .contact-card span{
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .contact-card a {
-    font-size: 14px;
+    font-size: 16px;
     cursor: pointer;
-    text-decoration: none;
+    text-decoration: underline;
     color: white;
+
 }
 
 .contact-card a:visited {
@@ -37,7 +38,7 @@ h2{
   }
 
 .font-icon{
-    width: 26px;
+    width: 28px;
     height: fit-content;
     margin: 5px;
 }

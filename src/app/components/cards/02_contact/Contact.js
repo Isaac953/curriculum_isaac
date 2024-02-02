@@ -11,11 +11,13 @@ import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import "./Contact.scss";
 import Link from "next/link";
 
+const title = "CONTACTO";
+
 let contactData = [
   {
     id: 1,
     icon: faPhone,
-    description: "+503 7989-9172",
+    description: "(503) 7989-9172",
   },
   {
     id: 2,
@@ -30,34 +32,34 @@ let contactData = [
   },
   {
     id: 4,
-    icon: faLocationDot,
-    description: "Apopa, San Salvador",
-  },
-  {
-    id: 5,
     icon: faGlobe,
     description: "Sitio Web",
     url: "https://isaac953.github.io/Portfolio_Angular/home"
   },
   {
-    id: 6,
-    icon: faFileLines,
-    description: "Certificados",
-    url: "https://drive.google.com/drive/folders/1TZRT3fDr4ssvVEgzzyvSfofsoNMXS9pU"
+    id: 5,
+    icon: faLocationDot,
+    description: "Apopa, San Salvador",
   },
+  // {
+  //   id: 6,
+  //   icon: faFileLines,
+  //   description: "Certificados",
+  //   url: "https://drive.google.com/drive/folders/1TZRT3fDr4ssvVEgzzyvSfofsoNMXS9pU"
+  // },
 ];
 
 export const Contact = () => {
   return (
     <section className="contact-card">
-      <h2>Contacto</h2>
+      <h2>{title}</h2>
       {contactData.map((item) => (
         <div key={item.id}>
           <FontAwesomeIcon icon={item.icon} className="font-icon" />
 
           {/* url Hidden no exist */}
           {item.url ? (
-            <Link href={{ pathname: item.url }} target="_blank">
+            <Link href={{ pathname: item.url }} target="_blank" title={item.description}>
               {item.description}
             </Link>
           ) : (

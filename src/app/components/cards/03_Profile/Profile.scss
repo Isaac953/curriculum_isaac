@@ -9,16 +9,15 @@
     padding-bottom: 15px;
     @include display-flex;
     align-items: flex-start;
+    color: white;
     span{
         margin-left: 20px;
     }
     .name{
-        font-size: 42px;
-        font-weight: bold;
-        color: white;
+        font-size: 40px;
+        font-weight: bold;  
     }
     .title{
-        font-size: 24px;
-        color: white;
+        font-size: 22px;
     }
 }

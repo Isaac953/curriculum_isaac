@@ -1,24 +1,20 @@
 @import "/src/app/styles/Flex.scss";
 @import "/src/app/styles/Colors.scss";
+@import "/src/app/styles/MainContact.scss";
 
 .contact-card{
     @include display-flex;
-    align-items: flex-start;
-    justify-content: center;
-    width: 90%;
-    margin: 15px 0px;
+    @include cards;
 }
 
-.contact-card div{
+.contact-subcard{
     // border: 1px solid white;
     @include display-flex-c;
-    justify-content: center;
+    @include subcards;
 }
 
-h2{
-    text-align: center;
-    width: 100%;
-    margin-bottom: 10px;
+.contact-title{
+    @include subtitles;
 }
 
 .contact-card span{

@@ -1,0 +1,16 @@
+@mixin cards{
+    align-items: flex-start;
+    justify-content: center;
+    width: 90%;
+    margin: 15px 0px;
+}
+
+@mixin subtitles{
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+@mixin subcards {
+    justify-content: center;
+}

@@ -11,7 +11,8 @@ import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import "./Contact.scss";
 import Link from "next/link";
 
-const title = "CONTACTO";
+export const Contact = () => {
+  const title = "CONTACTO";
 
 let contactData = [
   {
@@ -48,13 +49,11 @@ let contactData = [
   //   url: "https://drive.google.com/drive/folders/1TZRT3fDr4ssvVEgzzyvSfofsoNMXS9pU"
   // },
 ];
-
-export const Contact = () => {
   return (
     <section className="contact-card">
-      <h2>{title}</h2>
+      <h2 className="contact-title">{title}</h2>
       {contactData.map((item) => (
-        <div key={item.id}>
+        <div key={item.id} className="contact-subcard">
           <FontAwesomeIcon icon={item.icon} className="font-icon" />
 
           {/* url Hidden no exist */}

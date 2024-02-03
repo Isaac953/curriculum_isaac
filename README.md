@@ -25,4 +25,8 @@ Proyecto creado en React.
 
 - CV_08: **Descripción sobre mí agregados al CV**.
 - CV_09: **Implementar guardar proyecto en archivo PDF**.
+
+## 06 Soft Skills
+
 - CV_10: **Ajustes menores para comenzar lo siguiente parte I**.
+- CV_11: **Completando sección Aptitudes**.

@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     output: 'export',
-    webpack: (config) => {
+ /**   webpack: (config) => {
         config.resolve.alias.canvas = false;
 
         config.resolve.fallback = {
@@ -9,7 +9,7 @@ const nextConfig = {
         };
         
         return config;
-    },
+    },*/
 }
 
 module.exports = nextConfig

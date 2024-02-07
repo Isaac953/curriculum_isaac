@@ -26,41 +26,43 @@ header {
     }
   }
 }
+
 /*End Header Styles*/
 
 /*Start Main Styles*/
 main {
-  min-height: 200vh;
   position: relative;
+  min-height: 200vh;
   background-color: $mainColor;
   color: $textColor;
   @include display-flex-c;
 }
+
 /*End Main Styles*/
 
-.main-contact{
+.main-contact {
   min-height: inherit;
   width: 20vw;
   // border: 1px solid green;
   background-color: $contactColor;
-  @include display-flex;
   justify-content: flex-start;
+  @include display-flex;
 }
 
-hr{
+hr {
   border: 1px solid white;
   border-radius: 5px;
   width: 90%;
 }
 
-.hr-bg{
+.hr-bg {
   border: 1px solid black;
   border-radius: 5px;
   width: 97%;
   margin: 0px 10px;
 }
 
-.main-experience{
+.main-experience {
   min-height: inherit;
   width: 50vw;
   // border: 1px solid yellow;
@@ -73,26 +75,101 @@ footer {
   height: 80px;
   background-color: $headerColor;
   @include display-flex;
+
   span {
     color: $textColor;
     font-size: 16px;
   }
 }
+
 /*End Footer Styles*/
 
 @media print {
-  header{display:none;}
-  footer{display:none;}
-  
+  header {
+    display: none;
+  }
+
+  footer {
+    display: none;
+  }
+
   * {
     -webkit-print-color-adjust: exact;
   }
 
-  .main-contact{
+  .main-contact {
     width: 30%;
   }
 
-  .main-experience{
+  .main-experience {
     width: 70%;
   }
 }
+
+/* Start Media Queries Screens 768px and 1023px */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /*Start Header Styles*/
+  header {
+    height: 75px;
+
+    h1 {
+      font-size: 30px;
+    }
+  }
+
+  /*End Header Styles*/
+
+  /*Start Main Styles*/
+  main {
+    min-height: 150vh;
+  }
+
+  /*End Main Styles*/
+
+  /*Start Footer Styles*/
+  footer {
+    height: 75px;
+
+    span {
+      font-size: 14px;
+    }
+  }
+
+  /*End Footer Styles*/
+}
+
+/* End Media Queries Screens 768px and 1023px */
+
+/* Start Media Queries Screens 767px */
+@media screen and (max-width: 767px) {
+  /*Start Header Styles*/
+  header {
+    height: 70px;
+
+    h1 {
+      font-size: 28px;
+    }
+  }
+
+  /*End Header Styles*/
+
+  /*Start Main Styles*/
+  main {
+    min-height: 115vh;
+  }
+
+  /*End Main Styles*/
+
+  /*Start Footer Styles*/
+  footer {
+    height: 70px;
+
+    span {
+      font-size: 12px;
+    }
+  }
+
+  /*End Footer Styles*/
+}
+
+/* End Media Queries Screens 767px */

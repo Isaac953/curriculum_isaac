@@ -1,0 +1,12 @@
+@import "/src/app/styles/Flex.scss";
+@import "/src/app/styles/Colors.scss";
+
+.photo-card{
+    width: 90%;
+}
+
+.photo-card img{
+    width: 170px;
+    margin: 15px 0px;
+    border-radius: 50%;
+}

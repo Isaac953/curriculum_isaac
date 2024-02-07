@@ -1,36 +1,32 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Curriculum Isaac Arias
 
-## Getting Started
+Proyecto creado en React.
 
-First, run the development server:
+## 01 Layout
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- CV_01: **Creación de proyecto y componentes Header, Main y Footer**.
+- CV_02: **Agregar favicon al proyecto**.
+- CV_03: **Completar estructura inicial de layout**.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 02 Photo
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- CV_04: **Agregar foto del curriculum al proyecto y estilos**.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## 03 Contact
 
-## Learn More
+- CV_05: **Trabajar la sección de datos de contacto**.
+- CV_06: **Agregar enlaces en algunos elementos de la lista**.
 
-To learn more about Next.js, take a look at the following resources:
+## 04 Profile
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- CV_07: **Nombre y titulo agregados al CV**.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## 05 About
 
-## Deploy on Vercel
+- CV_08: **Descripción sobre mí agregados al CV**.
+- CV_09: **Implementar guardar proyecto en archivo PDF**.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 06 Soft Skills
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- CV_10: **Ajustes menores para comenzar lo siguiente parte I**.
+- CV_11: **Completando sección Aptitudes**.

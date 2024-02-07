@@ -1,0 +1,40 @@
+@import "/src/app/styles/Flex.scss";
+@import "/src/app/styles/Colors.scss";
+@import "/src/app/styles/MainContact.scss";
+
+.contact-card{
+    @include display-flex;
+    @include cards;
+}
+
+.contact-subcard{
+    // border: 1px solid white;
+    @include display-flex-c;
+    @include subcards;
+}
+
+.contact-title{
+    @include subtitles;
+}
+
+.contact-card span{
+    font-size: 16px;
+}
+
+.contact-card a {
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: underline;
+    color: white;
+
+}
+
+.contact-card a:visited {
+    color: white;
+  }
+
+.font-icon{
+    width: 28px;
+    height: fit-content;
+    margin: 5px;
+}

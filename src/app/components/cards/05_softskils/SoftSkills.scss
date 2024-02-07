@@ -1,0 +1,24 @@
+@import "/src/app/styles/Flex.scss";
+@import "/src/app/styles/Colors.scss";
+@import "/src/app/styles/MainContact.scss";
+
+.softskills-card{
+    @include display-flex;
+    @include cards;
+}
+
+.softskills-title{
+    @include subtitles;
+}
+
+.softskills-subcard{
+    @include display-flex-c;
+    @include subcards;
+}
+
+.softskills-subcard span{
+    font-size: 16px;
+    display:list-item;
+    position: relative;
+    left: 25px;
+}

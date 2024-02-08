@@ -13,7 +13,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-    <link rel="icon" type="image/png" href="/icons/cv_icon.png"/>
+    <link rel="icon" type="image/png" href="cv_isaac/icons/cv_icon.png"/>
       <body suppressHydrationWarning={true}>
         <Header />
         <Main />

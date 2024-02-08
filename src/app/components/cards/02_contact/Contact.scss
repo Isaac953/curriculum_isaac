@@ -3,13 +3,13 @@
 @import "/src/app/styles/MainContact.scss";
 
 .contact-card{
-    @include display-flex;
+    @include column;
     @include cards;
 }
 
 .contact-subcard{
     // border: 1px solid white;
-    @include display-flex-c;
+    @include row;
     @include subcards;
 }
 

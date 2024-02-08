@@ -3,7 +3,7 @@
 @import "/src/app/styles/MainContact.scss";
 
 .softskills-card{
-    @include display-flex;
+    @include column;
     @include cards;
 }
 
@@ -12,7 +12,7 @@
 }
 
 .softskills-subcard{
-    @include display-flex-c;
+    @include row;
     @include subcards;
 }
 

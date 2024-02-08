@@ -14,7 +14,8 @@
 header {
   height: 80px;
   background-color: $headerColor;
-  @include display-flex;
+  @include column;
+  justify-content: center;
 
   h1 {
     font-size: 32px;
@@ -35,7 +36,7 @@ main {
   min-height: 200vh;
   background-color: $mainColor;
   color: $textColor;
-  @include display-flex-c;
+  @include row;
 }
 
 /*End Main Styles*/
@@ -45,8 +46,7 @@ main {
   width: 20vw;
   // border: 1px solid green;
   background-color: $contactColor;
-  justify-content: flex-start;
-  @include display-flex;
+  @include column;
 }
 
 hr {
@@ -74,7 +74,8 @@ hr {
 footer {
   height: 80px;
   background-color: $headerColor;
-  @include display-flex;
+  @include column;
+  justify-content: center;
 
   span {
     color: $textColor;

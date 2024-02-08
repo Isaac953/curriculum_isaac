@@ -7,7 +7,7 @@
     background-color: $profileColor;
     margin: 15px 0px;
     padding-bottom: 15px;
-    @include display-flex;
+    @include column;
     align-items: flex-start;
     color: white;
     span{

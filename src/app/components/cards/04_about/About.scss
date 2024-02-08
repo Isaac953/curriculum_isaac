@@ -2,7 +2,7 @@
 @import "/src/app/styles/Colors.scss";
 
 .about-card{
-    @include display-flex;
+    @include column;
     align-items: flex-start;
     margin: 15px 0px;
     h2{

@@ -11,7 +11,7 @@
 }
 
 .contact-card{
-    @include display-flex;
+    @include column;
     align-items: flex-start;
     justify-content: center;
     width: 90%;
@@ -20,7 +20,7 @@
 
 .contact-card div{
     // border: 1px solid white;
-    @include display-flex-c;
+    @include row;
     justify-content: center;
 }
 
@@ -56,7 +56,7 @@ h2{
     background-color: $profileColor;
     margin: 15px 0px;
     padding-bottom: 15px;
-    @include display-flex;
+    @include column;
     align-items: flex-start;
     span{
         margin-left: 20px;

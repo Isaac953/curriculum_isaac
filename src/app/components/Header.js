@@ -9,9 +9,9 @@ export const Header = () => {
       <h1>
         <a>CURRICULUM PROFESIONAL</a>
       </h1>
-      <a href="javascript:window.print()" className="print-button">
+      {/* <a href="javascript:window.print()" className="print-button">
         Imprimir
-      </a>
+      </a> */}
       {/* <button>Download Image</button> */}
     </header>
   );

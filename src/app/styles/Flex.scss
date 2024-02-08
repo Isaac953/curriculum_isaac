@@ -1,11 +1,11 @@
-@mixin display-flex {
+@mixin column {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: flex-start;
 }
 
-@mixin display-flex-c {
+@mixin row {
   display: flex;
   flex-direction: row;
   justify-content: center;

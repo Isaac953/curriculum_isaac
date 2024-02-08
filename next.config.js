@@ -2,13 +2,11 @@
  * @type {import('next').NextConfig}
  */
 const nextConfig = {
-  basePath: "/cv_isaac",
   output: "export",
-  reactStrictMode: true,
-  distDir: 'dist',
-  // images: {
-  //   unoptimized: true,
-  // },
+  basePath: "/cv_isaac",
+  images: {
+    unoptimized: true,
+  },
 }
  
 module.exports = nextConfig

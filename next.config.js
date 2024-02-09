@@ -3,7 +3,7 @@
  */
 const nextConfig = {
   output: "export",
-  distDir: 'dist',
+  // distDir: 'dist',
   // basePath: "/cv_isaac",
   trailingSlash: true,
   images: {

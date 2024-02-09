@@ -3,10 +3,12 @@
  */
 const nextConfig = {
   output: "export",
-  basePath: "/cv_isaac",
-  images: {
-    unoptimized: true,
-  },
+  distDir: 'dist',
+  // basePath: "/cv_isaac",
+  // trailingSlash: true,
+  // images: {
+  //   unoptimized: true,
+  // },
 }
  
 module.exports = nextConfig

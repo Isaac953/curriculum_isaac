@@ -18,7 +18,7 @@ header {
   justify-content: center;
 
   h1 {
-    font-size: 32px;
+    font-size: 30px;
 
     a {
       color: $textColor;
@@ -33,7 +33,7 @@ header {
 /*Start Main Styles*/
 main {
   position: relative;
-  min-height: 200vh;
+  height: 200vh;
   background-color: $mainColor;
   color: $textColor;
   @include row;
@@ -42,7 +42,7 @@ main {
 /*End Main Styles*/
 
 .main-contact {
-  min-height: inherit;
+  height: inherit;
   width: 20vw;
   // border: 1px solid green;
   background-color: $contactColor;
@@ -63,7 +63,7 @@ hr {
 }
 
 .main-experience {
-  min-height: inherit;
+  height: inherit;
   width: 50vw;
   // border: 1px solid yellow;
   background-color: $textColor;
@@ -114,7 +114,7 @@ footer {
     height: 75px;
 
     h1 {
-      font-size: 30px;
+      font-size: 28px;
     }
   }
 
@@ -123,6 +123,13 @@ footer {
   /*Start Main Styles*/
   main {
     min-height: 150vh;
+    .main-contact {
+      width: 25%;
+    }
+  
+    .main-experience {
+      width: 60%;
+    }
   }
 
   /*End Main Styles*/
@@ -148,7 +155,7 @@ footer {
     height: 70px;
 
     h1 {
-      font-size: 28px;
+      font-size: 26px;
     }
   }
 
@@ -157,6 +164,13 @@ footer {
   /*Start Main Styles*/
   main {
     min-height: 115vh;
+    .main-contact {
+      width: 30%;
+    }
+  
+    .main-experience {
+      width: 70%;
+    }
   }
 
   /*End Main Styles*/

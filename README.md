@@ -30,3 +30,4 @@ Proyecto creado en React.
 
 - CV_10: **Ajustes menores para comenzar lo siguiente parte I**.
 - CV_11: **Completando sección Aptitudes**.
+- CV_12: **Implementación de github pages y comienzo de diseño responsivo**.

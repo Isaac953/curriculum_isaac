@@ -11,8 +11,7 @@ import { SoftSkills } from "./cards/05_softskils/SoftSkills";
 export const Main = () => {
   return (
     <main>
-      
-    <section className="main-contact">
+      <section className="main-contact">
         <Photo />
         <hr></hr>
         <Contact />
@@ -25,12 +24,9 @@ export const Main = () => {
         <hr className="hr-bg"></hr>
         <About />
         <hr className="hr-bg"></hr>
-      </section>  
-
+      </section>
     </main>
-
   );
-
 };
 
 // const root = createRoot(document.getElementById('root'));

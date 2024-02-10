@@ -19,5 +19,34 @@
     }
     .title{
         font-size: 22px;
+        text-align: left;
     }
 }
+
+/* Start Media Queries Screens 768px and 1023px */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .profile-card {
+        .name{
+            font-size: 38px;
+        }
+        .title{
+            font-size: 20px;
+        }
+    }
+  }
+  
+  /* End Media Queries Screens 768px and 1023px */
+  
+  /* Start Media Queries Screens 767px */
+  @media screen and (max-width: 767px) {
+    .profile-card {
+        .name{
+            font-size: 36px;
+        }
+        .title{
+            font-size: 18px;
+        }
+    }
+  }
+  
+  /* End Media Queries Screens 767px */

@@ -32,3 +32,4 @@ Proyecto creado en React.
 - CV_11: **Completando sección Aptitudes**.
 - CV_12: **Implementación de github pages y comienzo de diseño responsivo**.
 - CV_13: **Ajuste en diseño responsivo de sección contacto**.
+- CV_14: **Ajuste en diseño responsivo de sección profile y about**.

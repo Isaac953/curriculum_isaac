@@ -6,15 +6,16 @@
     width: 100%;
     background-color: $profileColor;
     margin: 15px 0px;
-    padding-bottom: 15px;
+    padding: 8px 0px;
     @include column;
     align-items: flex-start;
+    justify-content: center;
     color: white;
     span{
         margin-left: 20px;
     }
     .name{
-        font-size: 40px;
+        font-size: 36px;
         font-weight: bold;  
     }
     .title{
@@ -26,11 +27,14 @@
 /* Start Media Queries Screens 768px and 1023px */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     .profile-card {
+        span{
+            margin-left: 15px;
+        }
         .name{
-            font-size: 38px;
+            font-size: 32px;
         }
         .title{
-            font-size: 20px;
+            font-size: 18px;
         }
     }
   }
@@ -40,11 +44,14 @@
   /* Start Media Queries Screens 767px */
   @media screen and (max-width: 767px) {
     .profile-card {
+        span{
+            margin-left: 10px;
+        }
         .name{
-            font-size: 36px;
+            font-size: 28px;
         }
         .title{
-            font-size: 18px;
+            font-size: 14px;
         }
     }
   }

@@ -43,7 +43,7 @@ main {
 
 .main-contact {
   height: inherit;
-  width: 20vw;
+  width: 20%;
   // border: 1px solid green;
   background-color: $contactColor;
   @include column;
@@ -64,7 +64,7 @@ hr {
 
 .main-experience {
   height: inherit;
-  width: 50vw;
+  width: 50%;
   // border: 1px solid yellow;
   background-color: $textColor;
   color: $textColor2;

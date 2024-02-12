@@ -9,6 +9,7 @@
         text-align:left;
         margin-left: 20px;
         margin-bottom: 10px;
+        font-size: 24px;
     }
     span{
         text-align: justify;
@@ -16,3 +17,36 @@
         font-size: 16px;
     }
 }
+
+/* Start Media Queries Screens 768px and 1023px */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .about-card{
+        h2{
+            margin-left: 15px;
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+        span{
+            margin: 0px 15px;
+            font-size: 14px;
+        }
+    }
+  }
+  
+  /* End Media Queries Screens 768px and 1023px */
+  
+  /* Start Media Queries Screens 767px */
+  @media screen and (max-width: 767px) {
+    .about-card{
+        h2{
+            margin-left: 10px;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+        span{
+            margin: 0px 10px;
+            font-size: 12px;
+        }
+    }
+  }
+  

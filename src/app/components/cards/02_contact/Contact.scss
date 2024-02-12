@@ -15,10 +15,12 @@
 
 .contact-title{
     @include subtitles;
+    font-size: 24px;
 }
 
 .contact-card span{
     font-size: 16px;
+    text-align: left;
 }
 
 .contact-card a {
@@ -26,7 +28,7 @@
     cursor: pointer;
     text-decoration: underline;
     color: white;
-
+    text-align: left;
 }
 
 .contact-card a:visited {
@@ -41,14 +43,39 @@
 
 /* Start Media Queries Screens 768px and 1023px */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-
+    .contact-title{
+        font-size: 20px;
+    }
+    .contact-card span{
+        font-size: 14px;
+    }
+    .contact-card a {
+        font-size: 14px;
+    }
+    .font-icon{
+        width: 16px;
+    }
   }
   
   /* End Media Queries Screens 768px and 1023px */
   
   /* Start Media Queries Screens 767px */
   @media screen and (max-width: 767px) {
-
+    .contact-card{
+        width: 95%;
+    }
+    .contact-title{
+        font-size: 16px;
+    }
+    .contact-card span{
+        font-size: 12px;
+    }
+    .contact-card a {
+        font-size: 12px;
+    }
+    .font-icon{
+        width: 14px;
+    }
   }
   
   /* End Media Queries Screens 767px */

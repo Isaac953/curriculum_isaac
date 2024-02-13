@@ -12,9 +12,9 @@ export const Main = () => {
   return (
     <main className="main">
       <section className="main__contact">
-        {/* <Photo />
+        <Photo />
         <hr className="hr-wh"></hr>
-        <Contact />
+        {/* <Contact />
         <hr className="hr-wh"></hr>
         <SoftSkills />
         <hr></hr> */}

@@ -37,6 +37,7 @@
     width: 20%;
     background-color: $contactColor;
     @include column;
+    justify-content: flex-start;
   }
   .main__experience {
     height: inherit;
@@ -58,6 +59,19 @@
   }
 }
 /*End Footer Styles*/
+
+.hr-wh {
+  border: 1px solid white;
+  border-radius: 5px;
+  width: 90%;
+}
+
+.hr-bg {
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 97%;
+  margin: 0px 10px;
+}
 
 /* Start Media Queries Screens 768px and 1023px */
 @media screen and (min-width: 768px) and (max-width: 1023px) {

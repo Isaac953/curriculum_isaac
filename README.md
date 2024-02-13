@@ -33,3 +33,5 @@ Proyecto creado en React.
 - CV_12: **Implementación de github pages y comienzo de diseño responsivo**.
 - CV_13: **Ajuste en diseño responsivo de sección contacto**.
 - CV_14: **Ajuste en diseño responsivo de sección profile y about**.
+- CV_14.1: **Rework en estilos para plantilla principal**.
+- CV_14.2: **Rework de estilos en componente foto**.

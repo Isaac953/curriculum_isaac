@@ -10,20 +10,20 @@ import { SoftSkills } from "./cards/05_softskils/SoftSkills";
 
 export const Main = () => {
   return (
-    <main>
-      <section className="main-contact">
-        <Photo />
-        <hr></hr>
+    <main className="main">
+      <section className="main__contact">
+        {/* <Photo />
+        <hr className="hr-wh"></hr>
         <Contact />
-        <hr></hr>
+        <hr className="hr-wh"></hr>
         <SoftSkills />
-        <hr></hr>
+        <hr></hr> */}
       </section>
-      <section className="main-experience">
-        <Profile />
+      <section className="main__experience">
+        {/* <Profile />
         <hr className="hr-bg"></hr>
         <About />
-        <hr className="hr-bg"></hr>
+        <hr className="hr-bg"></hr> */}
       </section>
     </main>
   );

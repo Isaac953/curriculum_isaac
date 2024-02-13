@@ -52,12 +52,11 @@ let contactData = [
   return (
     <section className="contact-card">
       <h2 className="contact-title">{title}</h2>
-      {contactData.map((item) => (
+      {/* {contactData.map((item) => (
         <div key={item.id} className="contact-subcard">
-          <FontAwesomeIcon icon={item.icon} className="font-icon" />
-
+          <FontAwesomeIcon icon={item.icon} className="font-icon" /> */}
           {/* url Hidden no exist */}
-          {item.url ? (
+          {/* {item.url ? (
             <Link href={{ pathname: item.url }} target="_blank" title={item.description}>
               {item.description}
             </Link>
@@ -65,7 +64,7 @@ let contactData = [
             <span>{item.description}</span>
           )}
         </div>
-      ))}
+      ))} */}
     </section>
   );
 };

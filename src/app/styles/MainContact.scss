@@ -1,17 +1,29 @@
-@mixin cards{
-    align-items: flex-start;
-    justify-content: center;
-    width: 90%;
-    margin: 15px 0px;
+@mixin cards {
+  align-items: flex-start;
+  justify-content: center;
+  width: 90%;
+  margin: 15px 0px;
 }
 
-@mixin subtitles{
-    text-align: center;
-    width: 100%;
-    margin-bottom: 10px;
-    font-size: 24px;
+@mixin subtitles {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 24px;
 }
 
 @mixin subcards {
-    justify-content: center;
+  justify-content: center;
+}
+
+@mixin cards {
+  @media (min-width: 1024px) {
+    background-color: red;
+  }
+  @media (max-width: 1023px) {
+    background-color: blue;
+  }
+  @media (max-width: 767px) {
+    background-color: green;
+  }
 }

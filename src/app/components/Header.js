@@ -4,15 +4,12 @@ import React from "react";
 import "./Layout.scss";
 
 export const Header = () => {
+  const headerT = "CURRICULUM PROFESIONAL";
   return (
-    <header>
-      <h1>
-        <a>CURRICULUM PROFESIONAL</a>
+    <header className="header">
+      <h1 className="header__title">
+        <a>{headerT}</a>
       </h1>
-      {/* <a href="javascript:window.print()" className="print-button">
-        Imprimir
-      </a> */}
-      {/* <button>Download Image</button> */}
     </header>
   );
 };

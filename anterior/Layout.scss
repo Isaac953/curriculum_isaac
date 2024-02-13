@@ -11,12 +11,15 @@
 }
 
 /*Start Header Styles*/
-.header {
+header {
   height: 80px;
   background-color: $headerColor;
   @include column;
-  .header__title {
-    font-size: 28px;
+  justify-content: center;
+
+  h1 {
+    font-size: 30px;
+
     a {
       color: $textColor;
       font-weight: bold;
@@ -24,72 +27,122 @@
     }
   }
 }
+
 /*End Header Styles*/
 
 /*Start Main Styles*/
-.main {
+main {
+  position: relative;
   height: 200vh;
   background-color: $mainColor;
   color: $textColor;
   @include row;
-  .main__contact {
-    height: inherit;
-    width: 20%;
-    background-color: $contactColor;
-    @include column;
-  }
-  .main__experience {
-    height: inherit;
-    width: 50%;
-    background-color: $textColor;
-    color: $textColor2;
-  }
 }
+
 /*End Main Styles*/
 
+.main-contact {
+  height: inherit;
+  width: 20%;
+  // border: 1px solid green;
+  background-color: $contactColor;
+  @include column;
+}
+
+.hr-wh {
+  border: 1px solid white;
+  border-radius: 5px;
+  width: 90%;
+}
+
+.hr-bg {
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 97%;
+  margin: 0px 10px;
+}
+
+.main-experience {
+  height: inherit;
+  width: 50%;
+  // border: 1px solid yellow;
+  background-color: $textColor;
+  color: $textColor2;
+}
+
 /*Start Footer Styles*/
-.footer {
+footer {
   height: 80px;
   background-color: $headerColor;
   @include column;
-  .footer__title {
+  justify-content: center;
+
+  span {
     color: $textColor;
     font-size: 16px;
   }
 }
+
 /*End Footer Styles*/
+
+@media print {
+  header {
+    display: none;
+  }
+
+  footer {
+    display: none;
+  }
+
+  * {
+    -webkit-print-color-adjust: exact;
+  }
+
+  .main-contact {
+    width: 30%;
+  }
+
+  .main-experience {
+    width: 70%;
+  }
+}
 
 /* Start Media Queries Screens 768px and 1023px */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   /*Start Header Styles*/
-  .header {
+  header {
     height: 75px;
-    .header__title {
-      font-size: 26px;
+
+    h1 {
+      font-size: 28px;
     }
   }
+
   /*End Header Styles*/
 
   /*Start Main Styles*/
-  .main {
-    height: 150vh;
-    .main__contact {
+  main {
+    min-height: 150vh;
+    .main-contact {
       width: 25%;
     }
-
-    .main__experience {
+  
+    .main-experience {
       width: 60%;
     }
   }
+
   /*End Main Styles*/
 
   /*Start Footer Styles*/
-  .footer {
+  footer {
     height: 75px;
-    .footer__title {
+
+    span {
       font-size: 14px;
     }
   }
+
   /*End Footer Styles*/
 }
 
@@ -98,22 +151,24 @@
 /* Start Media Queries Screens 767px */
 @media screen and (max-width: 767px) {
   /*Start Header Styles*/
-  .header {
+  header {
     height: 70px;
-    .header__title {
-      font-size: 24px;
+
+    h1 {
+      font-size: 26px;
     }
   }
+
   /*End Header Styles*/
 
   /*Start Main Styles*/
-  .main {
-    height: 115vh;
-    .main__contact {
+  main {
+    min-height: 115vh;
+    .main-contact {
       width: 30%;
     }
-
-    .main__experience {
+  
+    .main-experience {
       width: 70%;
     }
   }
@@ -121,37 +176,15 @@
   /*End Main Styles*/
 
   /*Start Footer Styles*/
-  .footer {
+  footer {
     height: 70px;
-    .footer__title {
+
+    span {
       font-size: 12px;
     }
   }
+
   /*End Footer Styles*/
 }
 
 /* End Media Queries Screens 767px */
-
-@media print {
-  * {
-    -webkit-print-color-adjust: exact;
-  }
-
-  .header {
-    display: none;
-  }
-
-  .footer {
-    display: none;
-  }
-
-  .main {
-    .main__contact {
-      width: 30%;
-    }
-
-    .main__experience {
-      width: 70%;
-    }
-  }
-}

@@ -4,8 +4,8 @@ export const Footer = () => {
   const footerDescription = "Copyright © Isaac Arias 2024";
 
   return (
-    <footer>
-      <span>{footerDescription}</span>
+    <footer className="footer">
+      <span className="footer__title">{footerDescription}</span>
     </footer>
   );
 };

@@ -35,3 +35,4 @@ Proyecto creado en React.
 - CV_14: **Ajuste en diseño responsivo de sección profile y about**.
 - CV_14.1: **Rework en estilos para plantilla principal**.
 - CV_14.2: **Rework de estilos en componente foto**.
+- CV_14.3: **Rework de estilos en componente contacto**.

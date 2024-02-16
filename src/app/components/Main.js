@@ -14,9 +14,9 @@ export const Main = () => {
       <section className="main__contact">
         <Photo />
         <hr className="hr-wh"></hr>
-        {/* <Contact />
+        <Contact />
         <hr className="hr-wh"></hr>
-        <SoftSkills />
+        {/* <SoftSkills />
         <hr></hr> */}
       </section>
       <section className="main__experience">

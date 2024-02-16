@@ -1,6 +1,6 @@
 @import "/src/app/styles/Flex.scss";
 @import "/src/app/styles/Colors.scss";
-@import "/src/app/styles/MainContact.scss";
+@import "/src/app/styles/MainCards.scss";
 
 .softskills-card{
     @include column;
@@ -14,7 +14,7 @@
 
 .softskills-subcard{
     @include row;
-    @include subcards;
+    // @include subcards;
 }
 
 .softskills-subcard span{

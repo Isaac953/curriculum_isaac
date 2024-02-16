@@ -2,51 +2,48 @@
 @import "/src/app/styles/Colors.scss";
 @import "/src/app/styles/MainCards.scss";
 
-.softskills-card{
-    @include column;
-    @include cards;
-}
-
-.softskills-title{
+.softskillscard {
+  @include column;
+  @include cards;
+  .softskillscard__title {
     @include subtitles;
-    font-size: 24px;
-}
-
-.softskills-subcard{
+  }
+  .softskillscard__sub {
     @include row;
-    // @include subcards;
-}
-
-.softskills-subcard span{
-    font-size: 16px;
-    display:list-item;
-    position: relative;
-    left: 25px;
-    text-align: left;
+    .contactcard__sub--text {
+      display: list-item;
+      position: relative;
+      left: 20px;
+      font-size: 16px;
+      text-align: left;
+    }
+  }
 }
 
 /* Start Media Queries Screens 768px and 1023px */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-    .softskills-title{
-        font-size: 20px;
-    }
-    .softskills-card span{
-        font-size: 14px;
+  .softskillscard {
+    .softskillscard__sub {
+      .contactcard__sub--text {
         left: 18px;
+        font-size: 14px;
+      }
     }
   }
-  
-  /* End Media Queries Screens 768px and 1023px */
-  
-  /* Start Media Queries Screens 767px */
-  @media screen and (max-width: 767px) {
-    .softskills-title{
-        font-size: 16px;
-    }
-    .softskills-card span{
+}
+
+/* End Media Queries Screens 768px and 1023px */
+
+/* Start Media Queries Screens 767px */
+@media screen and (max-width: 767px) {
+  .softskillscard {
+    .softskillscard__sub {
+      .contactcard__sub--text {
+        left: 16px;
         font-size: 12px;
-        left: 12px;
+      }
     }
   }
-  
-  /* End Media Queries Screens 767px */
+}
+
+/* End Media Queries Screens 767px */

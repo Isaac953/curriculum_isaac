@@ -16,8 +16,8 @@ export const Main = () => {
         <hr className="hr-wh"></hr>
         <Contact />
         <hr className="hr-wh"></hr>
-        {/* <SoftSkills />
-        <hr></hr> */}
+        <SoftSkills />
+        <hr className="hr-wh"></hr>
       </section>
       <section className="main__experience">
         {/* <Profile />

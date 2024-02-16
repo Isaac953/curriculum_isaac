@@ -1,12 +1,17 @@
 @mixin cards {
   width: 95%;
-  margin: 8px 0px;
+  margin: 5px 0px;
   align-items: flex-start;
+  @media (min-width: 1024px) { margin: 10px 0px; }
+  @media (max-width: 1023px) { margin: 8px 0px; }
+  @media (max-width: 767px) { margin: 6px 0px; }
 }
 
 @mixin subtitles {
   text-align: center;
   width: 100%;
-  margin-bottom: 10px;
-  font-size: 24px;
+  margin-bottom: 5px;
+  @media (min-width: 1024px) { font-size: 24px; margin-bottom: 10px; }
+  @media (max-width: 1023px) { font-size: 20px; margin-bottom: 8px;  }
+  @media (max-width: 767px) { font-size: 16px; margin-bottom: 6px; }
 }

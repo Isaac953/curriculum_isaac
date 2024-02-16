@@ -7,9 +7,9 @@ export const About = () => {
    en el cual he trabajado en base a objetivos brindando soluciones de manera creativa y optima para empresas de tecnología, \
     industriales y ONGs.";
   return (
-    <section className="about-card">
-      <h2>{title}</h2>
-      <span>{description}</span>
+    <section className="aboutcard">
+      <h2 className="aboutcard__title">{title}</h2>
+      <span className="aboutcard__text">{description}</span>
     </section>
   );
 };

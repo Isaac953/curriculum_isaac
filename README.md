@@ -39,3 +39,4 @@ Proyecto creado en React.
 - CV_14.4: **Rework de estilos en componente aptitudes**.
 - CV_14.5: **Rework de estilos en componente profile**.
 - CV_14.6: **Rework de estilos en componente about (Fin rework)**.
+- CV_14.7: **Ajuste en diseño de impresión hasta componente about**.

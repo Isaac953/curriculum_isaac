@@ -55,3 +55,16 @@
   }
   
   /* End Media Queries Screens 767px */
+
+  @media print {
+    .profilecard {
+        margin: 15px 0px;
+        padding: 15px 0px;
+        .profilecard__name{
+            font-size: 38px;
+        }
+        .profilecard__title{
+            font-size: 22px;
+        }
+    }  
+  }

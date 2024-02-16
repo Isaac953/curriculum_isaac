@@ -12,19 +12,17 @@
     @include row;
     .contactcard__sub--link {
       @include row;
-      font-size: 16px;
+      @include description;
       cursor: pointer;
       text-decoration: underline;
       color: $textColor;
-      text-align: left;
     }
     .contactcard__sub--link:visited {
       color: $textColor;
     }
     .contactcard__sub--text {
       @include row;
-      font-size: 16px;
-      text-align: left;
+      @include description;
     }
   }
   .text__icon{
@@ -37,15 +35,6 @@
 /* Start Media Queries Screens 768px and 1023px */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .contactcard {
-    .contactcard__sub {
-      .contactcard__sub--link {
-        font-size: 14px;
-      }
-
-      .contactcard__sub--text {
-        font-size: 14px;
-      }
-    }
     .text__icon {
       width: 22px;
       height: 22px;
@@ -58,14 +47,6 @@
 /* Start Media Queries Screens 767px */
 @media screen and (max-width: 767px) {
   .contactcard {
-    .contactcard__sub {
-      .contactcard__sub--link {
-        font-size: 12px;
-      }
-      .contactcard__sub--text {
-        font-size: 12px;
-      }
-    }
     .text__icon {
       width: 18px;
       height: 18px;

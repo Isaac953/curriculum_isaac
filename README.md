@@ -36,3 +36,5 @@ Proyecto creado en React.
 - CV_14.1: **Rework en estilos para plantilla principal**.
 - CV_14.2: **Rework de estilos en componente foto**.
 - CV_14.3: **Rework de estilos en componente contacto**.
+- CV_14.4: **Rework de estilos en componente aptitudes**.
+- CV_14.5: **Rework de estilos en componente profile**.

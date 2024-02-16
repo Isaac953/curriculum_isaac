@@ -2,39 +2,39 @@
 @import "/src/app/styles/Colors.scss";
 
 
-.profile-card {
+.profilecard {
     width: 100%;
     background-color: $profileColor;
     margin: 15px 0px;
-    padding: 8px 0px;
+    padding: 15px 0px;
     @include column;
     align-items: flex-start;
     justify-content: center;
-    color: white;
-    span{
+    color: $textColor;
+    .profilecard__name{
+        font-size: 38px;
+        font-weight: bold;  
         margin-left: 20px;
     }
-    .name{
-        font-size: 36px;
-        font-weight: bold;  
-    }
-    .title{
+    .profilecard__title{
         font-size: 22px;
         text-align: left;
+        margin-left: 20px;
     }
 }
 
 /* Start Media Queries Screens 768px and 1023px */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-    .profile-card {
-        span{
+    .profilecard {
+        margin: 13px 0px;
+        padding: 13px 0px;
+        .profilecard__name{
+            font-size: 34px;
             margin-left: 15px;
         }
-        .name{
-            font-size: 32px;
-        }
-        .title{
+        .profilecard__title{
             font-size: 18px;
+            margin-left: 15px;
         }
     }
   }
@@ -43,15 +43,16 @@
   
   /* Start Media Queries Screens 767px */
   @media screen and (max-width: 767px) {
-    .profile-card {
-        span{
+    .profilecard {
+        margin: 11px 0px;
+        padding: 11px 0px;
+        .profilecard__name{
+            font-size: 30px;
             margin-left: 10px;
         }
-        .name{
-            font-size: 28px;
-        }
-        .title{
+        .profilecard__title{
             font-size: 14px;
+            margin-left: 10px;
         }
     }
   }

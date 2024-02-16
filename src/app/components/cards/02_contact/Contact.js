@@ -28,7 +28,7 @@ export const Contact = () => {
     {
       id: 3,
       icon: faLinkedin,
-      description: "Perfil de Linkedin",
+      description: "Perfil de LinkedIn",
       url: "https://www.linkedin.com/in/isaac-arias-6884a2149",
     },
     {

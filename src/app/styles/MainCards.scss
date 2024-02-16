@@ -1,6 +1,5 @@
 @mixin cards {
   width: 95%;
-  margin: 5px 0px;
   align-items: flex-start;
   @media (min-width: 1024px) { margin: 10px 0px; }
   @media (max-width: 1023px) { margin: 8px 0px; }
@@ -15,17 +14,24 @@
   @media (max-width: 767px) { font-size: 16px; margin-bottom: 6px; }
 }
 
-@mixin subtitles_experience {
-  text-align:left;
-  @media (min-width: 1024px) { font-size: 24px; margin-bottom: 10px;  margin-left: 20px; }
-  @media (max-width: 1023px) { font-size: 20px; margin-bottom: 8px;  margin-left: 15px; }
-  @media (max-width: 767px) { font-size: 16px; margin-bottom: 6px;  margin-left: 10px; }
+@mixin cards_experience {
+  align-items: flex-start;
+  width: 95%;
+  @media (min-width: 1024px) { margin: 10px 0px; }
+  @media (max-width: 1023px) { margin: 8px 0px; }
+  @media (max-width: 767px) { margin: 6px 0px; }
 }
 
+@mixin subtitles_experience {
+  text-align:left;
+  @media (min-width: 1024px) { font-size: 24px; margin-bottom: 10px;}
+  @media (max-width: 1023px) { font-size: 20px; margin-bottom: 8px;}
+  @media (max-width: 767px) { font-size: 16px; margin-bottom: 6px;}
+}
 
 @mixin description_experience {
   text-align: justify;
-  @media (min-width: 1024px) { font-size: 16px; margin: 0px 20px; }
-  @media (max-width: 1023px) { font-size: 14px; margin: 0px 15px;  }
-  @media (max-width: 767px) { font-size: 12px; margin: 0px 10px; }
+  @media (min-width: 1024px) { font-size: 16px;}
+  @media (max-width: 1023px) { font-size: 14px;}
+  @media (max-width: 767px) { font-size: 12px;}
 }

@@ -8,18 +8,19 @@
     margin: 15px 0px;
     padding: 15px 0px;
     @include column;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     color: $textColor;
     .profilecard__name{
         font-size: 38px;
-        font-weight: bold;  
-        margin-left: 20px;
+        font-weight: bold;
+        text-align: left;  
+        width: 95%;
     }
     .profilecard__title{
         font-size: 22px;
         text-align: left;
-        margin-left: 20px;
+        width: 95%;
     }
 }
 
@@ -30,11 +31,9 @@
         padding: 13px 0px;
         .profilecard__name{
             font-size: 34px;
-            margin-left: 15px;
         }
         .profilecard__title{
             font-size: 18px;
-            margin-left: 15px;
         }
     }
   }
@@ -47,12 +46,10 @@
         margin: 11px 0px;
         padding: 11px 0px;
         .profilecard__name{
-            font-size: 30px;
-            margin-left: 10px;
+            font-size: 28px;
         }
         .profilecard__title{
-            font-size: 14px;
-            margin-left: 10px;
+            font-size: 13px;
         }
     }
   }

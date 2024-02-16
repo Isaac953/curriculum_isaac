@@ -2,14 +2,13 @@
 @import "/src/app/styles/Colors.scss";
 @import "/src/app/styles/MainCards.scss";
 
-.aboutcard{
-    @include column;
-    align-items: flex-start;
-    margin: 15px 0px;
-    .aboutcard__title{
-        @include subtitles_experience;
-    }
-    .aboutcard__text{
-        @include description_experience
-    }
+.aboutcard {
+  @include column;
+  @include cards_experience;
+  .aboutcard__title {
+    @include subtitles_experience;
+  }
+  .aboutcard__text {
+    @include description_experience;
+  }
 }

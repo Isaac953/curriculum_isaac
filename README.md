@@ -43,4 +43,4 @@ Proyecto creado en React.
 
 ## 07 Work Experience
 
-- CV_15: **Comenzando a crear componente work experience y sus estilos**.
+- CV_15: **Comenzando a crear componente work experience y sus estilos**..

@@ -40,3 +40,7 @@ Proyecto creado en React.
 - CV_14.5: **Rework de estilos en componente profile**.
 - CV_14.6: **Rework de estilos en componente about (Fin rework)**.
 - CV_14.7: **Ajuste en diseño de impresión hasta componente about**.
+
+## 07 Work Experience
+
+- CV_15: **Comenzando a crear componente work experience y sus estilos**.

@@ -7,6 +7,7 @@ import { Contact } from "./cards/02_contact/Contact";
 import { Profile } from "./cards/03_Profile/Profile";
 import { About } from "./cards/04_about/About";
 import { SoftSkills } from "./cards/05_softskils/SoftSkills";
+import { Works } from "./cards/06_works/Works";
 
 export const Main = () => {
   return (
@@ -23,6 +24,8 @@ export const Main = () => {
         <Profile />
         <hr className="hr-bg"></hr>
         <About />
+        <hr className="hr-bg"></hr>
+        <Works />
         <hr className="hr-bg"></hr>
       </section>
     </main>

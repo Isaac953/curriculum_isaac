@@ -20,6 +20,7 @@
         text-decoration: underline;
         color: $textColor;
         @include flex-row;
+        @include description;
       }
       .item__link:visited {
         color: $textColor;

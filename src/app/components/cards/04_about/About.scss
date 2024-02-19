@@ -3,12 +3,12 @@
 @import "/src/app/styles/MainCards.scss";
 
 .aboutcard {
-  @include column;
+  @include flex-column;
   @include cards_experience;
-  .aboutcard__title {
+  &__title {
     @include subtitles_experience;
   }
-  .aboutcard__text {
+  &__text {
     @include description_experience;
   }
 }

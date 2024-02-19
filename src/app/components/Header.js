@@ -7,9 +7,7 @@ export const Header = () => {
   const headerT = "CURRICULUM PROFESIONAL";
   return (
     <header className="header">
-      <h1 className="header__title">
-        <a>{headerT}</a>
-      </h1>
+      <h1 className="header__title">{headerT}</h1>
     </header>
   );
 };

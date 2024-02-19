@@ -3,28 +3,24 @@
 @import "/src/app/styles/MainCards.scss";
 
 .workscard {
-  @include column;
+  @include flex-column;
   @include cards_experience;
-  .workscard__title {
+  &__title {
     @include subtitles_experience;
   }
-  .workscard__history{
-    @include column;
+  &__history {
+    @include flex-column;
     @include description_experience;
     align-items: flex-start;
-    .workscard__history--position{
-        font-weight: bold;
+    &--position {
+      font-weight: bold;
     }
-    .workscard__history--company{
-        font-style: italic;
+    &--company {
+      font-style: italic;
     }
-    .workscard__history--project{
-        color: $projectColor;
-        font-weight: bold;
+    &--project {
+      color: $projectColor;
+      font-weight: bold;
     }
   }
-
-//   .aboutcard__text {
-//     @include description_experience;
-//   }
 }

@@ -33,11 +33,13 @@ export const SoftSkills = () => {
   return (
     <section className="softskillscard">
       <h2 className="softskillscard__title">{title}</h2>
-      {softSkillsData.map((item) => (
-        <div key={item.id} className="softskillscard__sub">
-          <span className="contactcard__sub--text">{item.description}</span>
-        </div>
-      ))}
+      <ul className="softskillscard__list">
+        {softSkillsData.map((item) => (
+          <li key={item.id} className="softskillscard__list--item">
+            {item.description}
+          </li>
+        ))}
+      </ul>
     </section>
   );
 };

@@ -1,51 +1,154 @@
 @mixin cards {
   width: 95%;
   align-items: flex-start;
-  
-  @media (min-width: 1024px) { margin: 10px 0px;}
-  @media (max-width: 1023px) { margin: 8px 0px;}
-  @media (max-width: 767px) { margin: 6px 0px;}
-  @media print { margin: 8px 0px;}
+
+  @media (min-width: 1024px) {
+    margin: 9px 0px;
+  }
+
+  @media (max-width: 1023px) {
+    margin: 7px 0px;
+  }
+
+  @media (max-width: 767px) {
+    margin: 5px 0px;
+  }
+
+  @media print {
+    margin: 7px 0px;
+  }
 }
 
 @mixin subtitles {
   text-align: center;
   width: 100%;
-  @media (min-width: 1024px) { font-size: 24px; margin-bottom: 10px; }
-  @media (max-width: 1023px) { font-size: 20px; margin-bottom: 8px;  }
-  @media (max-width: 767px) { font-size: 16px; margin-bottom: 6px; }
-  @media print { font-size: 20px; margin-bottom: 8px;}
+
+  @media (min-width: 1024px) {
+    font-size: 23px;
+    margin-bottom: 9px;
+  }
+
+  @media (max-width: 1023px) {
+    font-size: 19px;
+    margin-bottom: 7px;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 13px;
+    margin-bottom: 5px;
+  }
+
+  @media print {
+    font-size: 19px;
+    margin-bottom: 7px;
+  }
 }
 
 @mixin description {
   text-align: left;
-  @media (min-width: 1024px) { font-size: 16px;}
-  @media (max-width: 1023px) { font-size: 14px;}
-  @media (max-width: 767px) { font-size: 12px;}
-  @media print { font-size: 14px;}
+
+  @media (min-width: 1024px) {
+    font-size: 16px;
+  }
+
+  @media (max-width: 1023px) {
+    font-size: 13px;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 10px;
+  }
+
+  @media print {
+    font-size: 13px;
+  }
+}
+
+@mixin icons {
+  margin: 5px;
+
+  @media (min-width: 1024px) {
+    width: 26px;
+    height: 26px;
+  }
+
+  @media (max-width: 1023px) {
+    width: 20px;
+    height: 20px;
+  }
+
+  @media (max-width: 767px) {
+    width: 14px;
+    height: 14px;
+  }
+
+  @media print {
+    width: 20px;
+    height: 20px;
+  }
 }
 
 @mixin cards_experience {
   align-items: flex-start;
   width: 95%;
-  @media (min-width: 1024px) { margin: 10px 0px; }
-  @media (max-width: 1023px) { margin: 8px 0px; }
-  @media (max-width: 767px) { margin: 6px 0px; }
-  @media print {margin: 8px 0px;}
+
+  @media (min-width: 1024px) {
+    margin: 9px 0px;
+  }
+
+  @media (max-width: 1023px) {
+    margin: 7px 0px;
+  }
+
+  @media (max-width: 767px) {
+    margin: 5px 0px;
+  }
+
+  @media print {
+    margin: 7px 0px;
+  }
 }
 
 @mixin subtitles_experience {
-  text-align:left;
-  @media (min-width: 1024px) { font-size: 24px; margin-bottom: 10px;}
-  @media (max-width: 1023px) { font-size: 20px; margin-bottom: 8px;}
-  @media (max-width: 767px) { font-size: 16px; margin-bottom: 6px;}
-  @media print {font-size: 20px; margin-bottom: 8px;}
+  text-align: left;
+
+  @media (min-width: 1024px) {
+    font-size: 23px;
+    margin-bottom: 9px;
+  }
+
+  @media (max-width: 1023px) {
+    font-size: 19px;
+    margin-bottom: 7px;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 13px;
+    margin-bottom: 5px;
+  }
+
+  @media print {
+    font-size: 19px;
+    margin-bottom: 7px;
+  }
 }
 
 @mixin description_experience {
   text-align: justify;
-  @media (min-width: 1024px) { font-size: 16px;}
-  @media (max-width: 1023px) { font-size: 14px;}
-  @media (max-width: 767px) { font-size: 12px;}
-  @media print {font-size: 14px;}
+
+  @media (min-width: 1024px) {
+    font-size: 16px;
+  }
+
+  @media (max-width: 1023px) {
+    font-size: 13px;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 10px;
+  }
+
+  @media print {
+    font-size: 13px;
+  }
 }

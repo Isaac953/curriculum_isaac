@@ -3,57 +3,34 @@
 @import "/src/app/styles/MainCards.scss";
 
 .contactcard {
-  @include column;
+  @include flex-column;
   @include cards;
-  .contactcard__title {
+  &__title {
     @include subtitles;
   }
-  .contactcard__sub {
-    @include row;
-    width: 95%;
-    justify-content: flex-start;
-    .contactcard__sub--link {
-      @include row;
-      @include description;
-      cursor: pointer;
-      text-decoration: underline;
-      color: $textColor;
-    }
-    .contactcard__sub--link:visited {
-      color: $textColor;
-    }
-    .contactcard__sub--text {
-      @include row;
-      @include description;
-    }
-  }
-  .text__icon{
-    width: 26px;
-    height: 26px;
-    margin: 5px;
-  }
-}
-
-/* Start Media Queries Screens 768px and 1023px */
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .contactcard {
-    .text__icon {
-      width: 22px;
-      height: 22px;
+  &__list {
+    width: inherit;
+    overflow: hidden;
+    list-style: none;
+    @include flex-column;
+    align-items: flex-start;
+    &--item {
+      .item__link {
+        cursor: pointer;
+        text-decoration: underline;
+        color: $textColor;
+        @include flex-row;
+      }
+      .item__link:visited {
+        color: $textColor;
+      }
+      .item__text {
+        @include flex-row;
+        @include description;
+      }
+      .icon {
+        @include icons;
+      }
     }
   }
 }
-
-/* End Media Queries Screens 768px and 1023px */
-
-/* Start Media Queries Screens 767px */
-@media screen and (max-width: 767px) {
-  .contactcard {
-    .text__icon {
-      width: 18px;
-      height: 18px;
-    }
-  }
-}
-
-/* End Media Queries Screens 767px */

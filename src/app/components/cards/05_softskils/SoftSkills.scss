@@ -3,50 +3,19 @@
 @import "/src/app/styles/MainCards.scss";
 
 .softskillscard {
-  @include column;
+  @include flex-column;
   @include cards;
-  .softskillscard__title {
+  &__title {
     @include subtitles;
   }
-  .softskillscard__sub {
-    @include row;
-    width: 95%;
-    justify-content: flex-start;
-    .contactcard__sub--text {
+  &__list {
+    width: inherit;
+    @include flex-column;
+    list-style: disc;
+    align-items: flex-start; 
+    margin-left: 12%;
+    &--item {
       @include description;
-      display: list-item;
-      position: relative;
-      left: 26px;
-      font-size: 16px;
-      text-align: left;
     }
   }
 }
-
-/* Start Media Queries Screens 768px and 1023px */
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .softskillscard {
-    .softskillscard__sub {
-      .contactcard__sub--text {
-        left: 22px;
-        font-size: 14px;
-      }
-    }
-  }
-}
-
-/* End Media Queries Screens 768px and 1023px */
-
-/* Start Media Queries Screens 767px */
-@media screen and (max-width: 767px) {
-  .softskillscard {
-    .softskillscard__sub {
-      .contactcard__sub--text {
-        left: 18px;
-        font-size: 12px;
-      }
-    }
-  }
-}
-
-/* End Media Queries Screens 767px */

@@ -52,27 +52,29 @@ export const Contact = () => {
   return (
     <section className="contactcard">
       <h2 className="contactcard__title">{title}</h2>
-      {contactData.map((item) => (
-        <div key={item.id} className="contactcard__sub">
+      <ul className="contactcard__list">
+        {contactData.map((item) => (
+          <li key={item.id} className="contactcard__list--item">
           {/* url Hidden no exist */}
-          {item.url ? (
-            <Link
-              href={{ pathname: item.url }}
-              className="contactcard__sub--link"
-              target="_blank"
-              title={item.description}
-            >
-              <FontAwesomeIcon icon={item.icon} className="text__icon" />
-              {item.description}
-            </Link>
-          ) : (
-            <span className="contactcard__sub--text">
-              <FontAwesomeIcon icon={item.icon} className="text__icon" />
-              {item.description}
-            </span>
-          )}
-        </div>
-      ))}
+            {item.url ? (
+              <Link
+                href={{ pathname: item.url }}
+                className="item__link"
+                target="_blank"
+                title={item.description}
+              >
+                <FontAwesomeIcon icon={item.icon} className="icon" />
+                {item.description}
+              </Link>
+            ) : (
+              <span className="item__text">
+                <FontAwesomeIcon icon={item.icon} className="icon" />
+                {item.description}
+              </span>
+            )}
+          </li>
+        ))}
+      </ul>
     </section>
   );
 };

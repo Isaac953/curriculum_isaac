@@ -14,16 +14,15 @@
 .header {
   height: 80px;
   background-color: $headerColor;
-  @include column;
-  .header__title {
+  @include flex-column;
+  justify-content: center;
+  &__title {
     font-size: 28px;
-    a {
-      color: $textColor;
-      font-weight: bold;
-      text-decoration: none;
-    }
+    color: $textColor;
+    font-weight: bold;
   }
 }
+
 /*End Header Styles*/
 
 /*Start Main Styles*/
@@ -31,37 +30,43 @@
   height: 200vh;
   background-color: $mainColor;
   color: $textColor;
-  @include row;
-  .main__contact {
+  @include flex-row;
+  justify-content: center;
+  &__contact {
     height: inherit;
     width: 20%;
     background-color: $contactColor;
-    @include column;
     justify-content: flex-start;
+    @include flex-column;
   }
-  .main__experience {
+
+  &__experience {
     height: inherit;
     width: 50%;
     background-color: $textColor;
     color: $textColor2;
-    @include column;
     justify-content: flex-start;
+    @include flex-column;
   }
 }
+
 /*End Main Styles*/
 
 /*Start Footer Styles*/
 .footer {
   height: 80px;
   background-color: $headerColor;
-  @include column;
-  .footer__title {
+  @include flex-column;
+  justify-content: center;
+  &__title {
     color: $textColor;
     font-size: 16px;
   }
 }
+
 /*End Footer Styles*/
 
+/*Start hrs Styles*/
 .hr-wh {
   border: 1px solid white;
   border-radius: 5px;
@@ -74,37 +79,45 @@
   width: 95%;
 }
 
+/*End hrs Styles*/
+
 /* Start Media Queries Screens 768px and 1023px */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   /*Start Header Styles*/
   .header {
     height: 75px;
-    .header__title {
+
+    &__title {
       font-size: 26px;
     }
   }
+
   /*End Header Styles*/
 
   /*Start Main Styles*/
   .main {
-    height: 150vh;
-    .main__contact {
+    height: 190vh;
+
+    &__contact {
       width: 25%;
     }
 
-    .main__experience {
+    &__experience {
       width: 60%;
     }
   }
+
   /*End Main Styles*/
 
   /*Start Footer Styles*/
   .footer {
     height: 75px;
-    .footer__title {
+
+    &__title {
       font-size: 14px;
     }
   }
+
   /*End Footer Styles*/
 }
 
@@ -115,20 +128,23 @@
   /*Start Header Styles*/
   .header {
     height: 70px;
-    .header__title {
+
+    &__title {
       font-size: 24px;
     }
   }
+
   /*End Header Styles*/
 
   /*Start Main Styles*/
   .main {
-    height: 115vh;
-    .main__contact {
+    height: 125vh;
+
+    &__contact {
       width: 30%;
     }
 
-    .main__experience {
+    &__experience {
       width: 70%;
     }
   }
@@ -138,10 +154,12 @@
   /*Start Footer Styles*/
   .footer {
     height: 70px;
-    .footer__title {
+
+    &__title {
       font-size: 12px;
     }
   }
+
   /*End Footer Styles*/
 }
 
@@ -152,21 +170,30 @@
     -webkit-print-color-adjust: exact;
   }
 
+  /*Start Header Styles*/
   .header {
     display: none;
   }
 
+  /*End Header Styles*/
+
+  /*Start Main Styles*/
+  .main {
+    &__contact {
+      width: 30%;
+    }
+
+    &__experience {
+      width: 70%;
+    }
+  }
+
+  /*End Main Styles*/
+
+  /*Start Footer Styles*/
   .footer {
     display: none;
   }
 
-  .main {
-    .main__contact {
-      width: 30%;
-    }
-
-    .main__experience {
-      width: 70%;
-    }
-  }
+  /*End Footer Styles*/
 }

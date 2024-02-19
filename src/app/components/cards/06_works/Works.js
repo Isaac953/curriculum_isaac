@@ -13,26 +13,26 @@ export const Works = () => {
       project: "Sistema de Inventario y Facturación.",
     },
     {
-        id: 2,
-        position: "Programador PHP / Consultor Informático",
-        company: "Plan Internacional El Salvador",
-        date: "Mayo 2018 - Octubre 2018",
-        project: "Aplicación Web SIPAB 2.0 Actualizaciones.",
-      },
-      {
-        id: 3,
-        position: "Programador Frontend",
-        company: "IMOVES S.A. de C.V.",
-        date: "Febrero 2018 - Abril 2018",
-        project: "Revisión de aplicaciones existentes.",
-      },
-      {
-        id: 4,
-        position: "Pasante del Área de Innovación y Gestión del conocimiento",
-        company: "Plan Internacional El Salvador",
-        date: "Julio 2016 - Febrero 2017",
-        project: "Aplicación Web para gestión de Consultorias.",
-      },
+      id: 2,
+      position: "Programador PHP / Consultor Informático",
+      company: "Plan Internacional El Salvador",
+      date: "Mayo 2018 - Octubre 2018",
+      project: "Aplicación Web SIPAB 2.0 Actualizaciones.",
+    },
+    {
+      id: 3,
+      position: "Programador Frontend",
+      company: "IMOVES S.A. de C.V.",
+      date: "Febrero 2018 - Abril 2018",
+      project: "Revisión de aplicaciones existentes.",
+    },
+    {
+      id: 4,
+      position: "Pasante del Área de Innovación y Gestión del conocimiento",
+      company: "Plan Internacional El Salvador",
+      date: "Julio 2016 - Febrero 2017",
+      project: "Aplicación Web para gestión de Consultorias.",
+    },
   ];
   return (
     <section className="workscard">

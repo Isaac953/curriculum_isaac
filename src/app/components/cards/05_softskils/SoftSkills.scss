@@ -13,9 +13,40 @@
     @include flex-column;
     list-style: disc;
     align-items: flex-start; 
-    margin-left: 12%;
+    margin-left: 26px;
     &--item {
       @include description;
     }
   }
 }
+
+/* Start Media Queries Screens 768px and 1023px */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .softskillscard {
+      &__list{
+        margin-left: 20px;
+      }
+  }
+}
+
+/* End Media Queries Screens 768px and 1023px */
+
+/* Start Media Queries Screens 767px */
+@media screen and (max-width: 767px) {
+  .softskillscard {
+    &__list{
+      margin-left: 14px;
+    }
+  }
+}
+
+/* End Media Queries Screens 767px */
+
+@media print {
+  .softskillscard {
+    &__list{
+      margin-left: 20px;
+    }
+  }
+}
+

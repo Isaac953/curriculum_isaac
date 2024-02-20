@@ -36,9 +36,11 @@
 
 @media print {
   .photocard {
+    width: 90%;
     &__profile {
-      width: 80%;
-      margin: 10px 0px;
+      width: 170px;
+      margin: 12px 0px;
+      border-radius: 50%;
     }
   }
 }

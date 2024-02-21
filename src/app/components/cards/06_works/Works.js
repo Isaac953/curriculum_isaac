@@ -124,6 +124,7 @@ export const Works = () => {
       company: "Plan Internacional El Salvador",
       date: "Julio 2016 - Febrero 2017",
       project: "Aplicación Web para gestión de Consultorias.",
+      styleClass: "margin-botton",
       activities: [
         {
           idt: 1,
@@ -167,7 +168,7 @@ export const Works = () => {
     <section className="workscard">
       <h2 className="workscard__title">{title}</h2>
       {expecienceData.map((item) => (
-        <div key={item.id} className="workscard__history">
+        <div key={item.id} className={`workscard__history ${item.styleClass}`}>
           <span className="workscard__history--position">{item.position}</span>
           <span className="workscard__history--company">
             {item.company} | {item.date}

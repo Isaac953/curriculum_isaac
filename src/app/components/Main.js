@@ -16,44 +16,47 @@ export const Main = () => {
   let [heightDiv, setHeight] = useState(null);
   useLayoutEffect(() => setHeight(container.current.offsetHeight), []);
 
-useEffect(() => {
+  useEffect(() => {
     const updateWindowDimensions = () => {
       // const newHeight = window.innerHeight;
       // setHeight(newHeight);
       // console.log("updating height");
-      
+
       const newHeight = container.current.offsetHeight;
       setHeight(newHeight);
       console.log("updating height");
       console.log(newHeight);
     };
     window.addEventListener("resize", updateWindowDimensions);
-    return () => window.removeEventListener("resize", updateWindowDimensions) 
+    return () => window.removeEventListener("resize", updateWindowDimensions);
   }, []);
 
   // console.log("give height", heightDiv);
 
   return (
-    <main className="main" style={{height: heightDiv}}>
-    {/* {heightDiv} */}
-      <section className="main__contact">
+    // <main className="main" style={{ height: heightDiv }}>
+    <main className="main">
+      {/* {heightDiv} */}
+      <section className="main__page" style={{ height: heightDiv }}>
+        <section className="main__page--contact">
         <Photo />
-        <hr className="hr-wh"></hr>
-        <Contact />
-        <hr className="hr-wh"></hr>
-        <Languages />
-        <hr className="hr-wh"></hr>
-        <SoftSkills />
-        <hr className="hr-wh"></hr>
-      </section>
-      <section className="main__experience" ref={container}>
+          <hr className="hr-wh"></hr>
+          <Contact />
+          <hr className="hr-wh"></hr>
+          <Languages />
+          <hr className="hr-wh"></hr>
+          <SoftSkills />
+          <hr className="hr-wh"></hr>
+        </section>
+        <section className="main__page--experience" ref={container}>
         <Profile />
-        <hr className="hr-bg"></hr>
-        <About />
-        <hr className="hr-bg"></hr>
-        <Works />
-        <hr className="hr-bg"></hr>
+          <hr className="hr-bg"></hr>
+          <About />
+          <hr className="hr-bg"></hr>
+          <Works />
+        </section>
       </section>
+      <section className="main__page" style={{color: 'black'}}>page 2</section>
     </main>
   );
 };

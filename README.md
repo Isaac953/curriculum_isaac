@@ -51,3 +51,4 @@ Proyecto creado en React.
 ## 08 Work Experience
 
 - CV_16: **Componente Idiomas completo y ajustes en tamaño de height dinamico**.
+- CV_16.1: **Implementación de cantidad de paginas del documento**.

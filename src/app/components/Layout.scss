@@ -14,8 +14,8 @@
 .header {
   height: 80px;
   background-color: $headerColor;
-  @include flex-column;
   justify-content: center;
+  @include flex-column;
   &__title {
     font-size: 28px;
     color: $textColor;
@@ -27,28 +27,35 @@
 
 /*Start Main Styles*/
 .main {
-  height: 1200px;
+  // height: 1200px;
   background-color: $mainColor;
   // border: 5px solid green;
   color: $textColor;
-  @include flex-row;
-  justify-content: center;
-  align-items: flex-start;
-  &__contact {
-    height: inherit;
-    width: 20%;
-    background-color: $contactColor;
-    justify-content: flex-start;
-    @include flex-column;
-  }
-
-  &__experience {
-    height: inherit;
-    width: 50%;
+  @include flex-column;
+  &__page {
+    width: 70%;
+    height: 1200px;
     background-color: $textColor;
-    color: $textColor2;
-    justify-content: flex-start;
-    @include flex-column;
+    margin-bottom: 9px;
+   @include flex-row;
+    &--contact {
+      height: inherit;
+      width: 28%;
+      background-color: $contactColor;
+      justify-content: flex-start;
+      @include flex-column;
+      padding: 0px;
+      margin: 0px;
+    }
+    &--experience {
+      height: inherit;
+      width: 72%;
+      color: $textColor2;
+      justify-content: flex-start;
+      @include flex-column;
+      padding: 0px;
+      margin: 0px;
+    }
   }
 }
 
@@ -58,8 +65,8 @@
 .footer {
   height: 80px;
   background-color: $headerColor;
-  @include flex-column;
   justify-content: center;
+  @include flex-column;
   &__title {
     color: $textColor;
     font-size: 16px;
@@ -98,14 +105,18 @@
 
   /*Start Main Styles*/
   .main {
-    height: 900px;
-    // border: 5px solid red;
-    &__contact {
-      width: 25%;
-    }
+    &__page {
+      width: 85%;
+      height: 900px;
+      margin-bottom: 7px;
+      // border: 5px solid red;
+      &--contact {
+        width: 29%;
+      }
 
-    &__experience {
-      width: 60%;
+      &--experience {
+        width: 71%;
+      }
     }
   }
 
@@ -140,14 +151,18 @@
 
   /*Start Main Styles*/
   .main {
-    height: 880px;
-    // border: 5px solid yellow;
-    &__contact {
-      width: 30%;
-    }
+    &__page {
+      width: 100%;
+      height: 880px;
+      margin-bottom: 5px;
+      // border: 5px solid red;
+      &--contact {
+        width: 30%;
+      }
 
-    &__experience {
-      width: 70%;
+      &--experience {
+        width: 70%;
+      }
     }
   }
 
@@ -181,14 +196,26 @@
 
   /*Start Main Styles*/
   .main {
-    height: 1200px;
-    &__contact {
-      width: 30%;
-    }
+    &__page {
+      width: 100%;
+      height: 100vh;
+      margin-bottom: 0px;
+      &--contact {
+        width: 30%;
+      }
 
-    &__experience {
-      width: 70%;
+      &--experience {
+        width: 70%;
+      }
     }
+    // height: 1200px;
+    // &__contact {
+    //   width: 30%;
+    // }
+
+    // &__experience {
+    //   width: 70%;
+    // }
   }
 
   /*End Main Styles*/

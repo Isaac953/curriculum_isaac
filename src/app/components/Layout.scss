@@ -27,11 +27,11 @@
 
 /*Start Main Styles*/
 .main {
-  height: 200vh;
   background-color: $mainColor;
   color: $textColor;
   @include flex-row;
   justify-content: center;
+  align-items: flex-start;
   &__contact {
     height: inherit;
     width: 20%;
@@ -96,7 +96,6 @@
 
   /*Start Main Styles*/
   .main {
-    height: 190vh;
 
     &__contact {
       width: 25%;
@@ -138,7 +137,6 @@
 
   /*Start Main Styles*/
   .main {
-    height: 125vh;
 
     &__contact {
       width: 30%;

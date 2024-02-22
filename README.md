@@ -47,3 +47,7 @@ Proyecto creado en React.
 - CV_15.1: **Ajuste definitivo de hojas de estilo por componentes**.
 - CV_15.2: **Agregada primera experiencia laboral y ajuste de estilos**.
 - CV_15.3: **Agregadas experiencias restantes y cambio en estilos**.
+
+## 08 Work Experience
+
+- CV_16: **Componente Idiomas completo y ajustes en tamaño de height dinamico**.

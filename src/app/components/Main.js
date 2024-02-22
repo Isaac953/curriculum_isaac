@@ -35,6 +35,7 @@ useEffect(() => {
 
   return (
     <main className="main" style={{height: heightDiv}}>
+    {/* {heightDiv} */}
       <section className="main__contact">
         <Photo />
         <hr className="hr-wh"></hr>

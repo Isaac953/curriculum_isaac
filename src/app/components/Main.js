@@ -17,15 +17,34 @@ export const Main = () => {
   useLayoutEffect(() => setHeight(container.current.offsetHeight), []);
 
   useEffect(() => {
+    let newHeight = container.current.offsetHeight;
     const updateWindowDimensions = () => {
       // const newHeight = window.innerHeight;
       // setHeight(newHeight);
       // console.log("updating height");
 
-      const newHeight = container.current.offsetHeight;
-      setHeight(newHeight);
-      console.log("updating height");
+
       console.log(newHeight);
+      if(newHeight >= 1195){
+        newHeight = 1200;
+        setHeight(newHeight);
+        console.log(newHeight);
+        console.log("updating height");
+      }
+      else if(newHeight < 1195 && newHeight >= 893){
+        newHeight = 900;
+        setHeight(newHeight);
+        console.log(newHeight);
+        console.log("updating height");
+      }
+      else if(newHeight < 893 && newHeight >= 839){
+        newHeight = 880;
+        setHeight(newHeight);
+        console.log(newHeight);
+        console.log("updating height");
+      }
+      // setHeight(newHeight);
+      // console.log("updating height");
     };
     window.addEventListener("resize", updateWindowDimensions);
     return () => window.removeEventListener("resize", updateWindowDimensions);
@@ -37,7 +56,7 @@ export const Main = () => {
     // <main className="main" style={{ height: heightDiv }}>
     <main className="main">
       {/* {heightDiv} */}
-      <section className="main__page" style={{ height: heightDiv }}>
+      <section className="main__page">
         <section className="main__page--contact">
         <Photo />
           <hr className="hr-wh"></hr>

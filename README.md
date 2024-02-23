@@ -53,3 +53,7 @@ Proyecto creado en React.
 - CV_16: **Componente Idiomas completo y ajustes en tamaño de height dinamico**.
 - CV_16.1: **Implementación de cantidad de paginas del documento**.
 - CV_16.2: **Ajuste por dispositivo el height automatico**.
+
+## 09 Education
+
+- CV_17: **Componente de education completado con la información**.

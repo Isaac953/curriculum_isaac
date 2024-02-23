@@ -9,6 +9,7 @@ import { About } from "./cards/04_about/About";
 import { SoftSkills } from "./cards/05_softskils/SoftSkills";
 import { Works } from "./cards/06_works/Works";
 import { Languages } from "./cards/07_languages/Languages";
+import { Education } from "./cards/08_education/Education";
 
 export const Main = () => {
   // const [height, setHeight] = useState(0);
@@ -23,21 +24,18 @@ export const Main = () => {
       // setHeight(newHeight);
       // console.log("updating height");
 
-
       console.log(newHeight);
-      if(newHeight >= 1195){
+      if (newHeight >= 1195) {
         newHeight = 1200;
         setHeight(newHeight);
         console.log(newHeight);
         console.log("updating height");
-      }
-      else if(newHeight < 1195 && newHeight >= 893){
+      } else if (newHeight < 1195 && newHeight >= 893) {
         newHeight = 900;
         setHeight(newHeight);
         console.log(newHeight);
         console.log("updating height");
-      }
-      else if(newHeight < 893 && newHeight >= 839){
+      } else if (newHeight < 893 && newHeight >= 839) {
         newHeight = 880;
         setHeight(newHeight);
         console.log(newHeight);
@@ -56,9 +54,9 @@ export const Main = () => {
     // <main className="main" style={{ height: heightDiv }}>
     <main className="main">
       {/* {heightDiv} */}
-      <section className="main__page">
+      <section className="main__page marginb">
         <section className="main__page--contact">
-        <Photo />
+          <Photo />
           <hr className="hr-wh"></hr>
           <Contact />
           <hr className="hr-wh"></hr>
@@ -68,14 +66,23 @@ export const Main = () => {
           <hr className="hr-wh"></hr>
         </section>
         <section className="main__page--experience" ref={container}>
-        <Profile />
+          <Profile />
           <hr className="hr-bg"></hr>
           <About />
           <hr className="hr-bg"></hr>
           <Works />
         </section>
       </section>
-      <section className="main__page" style={{color: 'black'}}>page 2</section>
+      <section className="main__page" style={{ color: "black" }}>
+        <section className="main__page--contact">
+          <hr className="hr-wh margint"></hr>
+        </section>
+        <section className="main__page--experience" ref={container}>
+          <hr className="hr-bg margint"></hr>
+          <Education />
+          <hr className="hr-bg"></hr>
+        </section>
+      </section>
     </main>
   );
 };

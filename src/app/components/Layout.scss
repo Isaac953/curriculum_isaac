@@ -32,12 +32,14 @@
   // border: 5px solid green;
   color: $textColor;
   @include flex-column;
+  .marginb {
+    margin-bottom: 9px;
+  }
   &__page {
     width: 70%;
-    height: 1200px;
+    height: 1215px;
     background-color: $textColor;
-    margin-bottom: 9px;
-   @include flex-row;
+    @include flex-row;
     &--contact {
       height: inherit;
       width: 28%;
@@ -88,6 +90,10 @@
   width: 95%;
 }
 
+.margint {
+  margin-top: 15px;
+}
+
 /*End hrs Styles*/
 
 /* Start Media Queries Screens 768px and 1023px */
@@ -107,8 +113,10 @@
   .main {
     &__page {
       width: 85%;
-      height: 900px;
-      margin-bottom: 7px;
+      height: 913px;
+      .marginb {
+        margin-bottom: 7px;
+      }
       // border: 5px solid red;
       &--contact {
         width: 29%;
@@ -121,6 +129,12 @@
   }
 
   /*End Main Styles*/
+
+  /*Start hrs Styles*/
+  .margint {
+    margin-top: 13px;
+  }
+  /*End hrs Styles*/
 
   /*Start Footer Styles*/
   .footer {
@@ -151,10 +165,12 @@
 
   /*Start Main Styles*/
   .main {
+    .marginb {
+      margin-bottom: 5px;
+    }
     &__page {
       width: 100%;
-      height: 880px;
-      margin-bottom: 5px;
+      height: 891px;
       // border: 5px solid red;
       &--contact {
         width: 30%;
@@ -167,6 +183,12 @@
   }
 
   /*End Main Styles*/
+
+  /*Start hrs Styles*/
+  .margint {
+    margin-top: 11px;
+  }
+  /*End hrs Styles*/
 
   /*Start Footer Styles*/
   .footer {
@@ -196,10 +218,12 @@
 
   /*Start Main Styles*/
   .main {
+    .marginb {
+      margin-bottom: 0px;
+    }
     &__page {
       width: 100%;
       height: 100vh;
-      margin-bottom: 0px;
       &--contact {
         width: 30%;
       }
@@ -208,17 +232,15 @@
         width: 70%;
       }
     }
-    // height: 1200px;
-    // &__contact {
-    //   width: 30%;
-    // }
-
-    // &__experience {
-    //   width: 70%;
-    // }
   }
 
   /*End Main Styles*/
+
+  /*Start hrs Styles*/
+  .margint {
+    margin-top: 15px;
+  }
+  /*End hrs Styles*/
 
   /*Start Footer Styles*/
   .footer {

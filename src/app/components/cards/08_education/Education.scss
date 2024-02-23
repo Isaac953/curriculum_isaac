@@ -1,0 +1,71 @@
+@import "/src/app/styles/Flex.scss";
+@import "/src/app/styles/Colors.scss";
+@import "/src/app/styles/MainCards.scss";
+
+.educationcard {
+  @include flex-column;
+  @include cards_experience;
+  &__title {
+    @include subtitles_experience;
+  }
+  &__history {
+    @include flex-column;
+    @include description_experience;
+    align-items: flex-start;
+    margin-bottom: 9px;
+    &--position {
+      font-weight: bold;
+    }
+    &--company {
+      font-style: italic;
+    }
+    &--project {
+      color: $educationColor;
+      font-weight: bold;
+      margin-bottom: 9px;
+    }
+  }
+  .margin-botton{
+    margin-bottom: 0px;
+  }
+}
+
+/* Start Media Queries Screens 768px and 1023px */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .educationcard {
+    &__history {
+      margin-bottom: 7px;
+      &--project {
+        margin-bottom: 7px;
+      }
+    }
+  }
+}
+
+/* End Media Queries Screens 768px and 1023px */
+
+/* Start Media Queries Screens 767px */
+@media screen and (max-width: 767px) {
+  .educationcard {
+    &__history {
+      margin-bottom: 5px;
+      &--project {
+        margin-bottom: 5px;
+      }
+    }
+  }
+}
+
+/* End Media Queries Screens 767px */
+
+@media print {
+  .educationcard {
+    &__history {
+      margin-bottom: 7px;
+      &--project {
+        margin-bottom: 7px;
+      }
+    }
+  }
+}
+

@@ -1,5 +1,6 @@
 import React from 'react';
 import "./Education.scss";
+import Link from "next/link";
 
 export const Education = () => {
 const title = "DATOS ACADÉMICOS";
@@ -25,6 +26,7 @@ let educationData = [
         company: "Curso de Ingles de Básico a Intermedio",
         date: "Enero 2018 - Mayo 2019",
         project: "Nivel de Ingles B1.",
+        url: "https://drive.google.com/file/d/1-dxQscQwSk2dyDBDNWrWM5ljMl6x13OK/view",
       },
       {
         id: 4,
@@ -33,6 +35,7 @@ let educationData = [
         date: "Enero 2011 - Abril 2017",
         project: "Gestión de la seguridad, respaldo y control de acceso para entornos virtualizados.",
         styleClass: "margin-botton",
+        url: "https://drive.google.com/file/d/1RYTdkPsetAfALRrkfRAxm3bEmX0VK9Ie/view",
       },
   ];
   return (
@@ -44,7 +47,23 @@ let educationData = [
           <span className="educationcard__history--company">
             {item.company} | {item.date}
           </span>
-          <span className="educationcard__history--project">{item.project}</span>
+          {/* <span className="educationcard__history--project">{item.project}</span> */}
+
+          {/* url Hidden no exist */}
+          {item.url ? (
+              <Link
+                href={{ pathname: item.url }}
+                className="educationcard__history--project"
+                target="_blank"
+                title={item.project}
+              >
+                {item.project}
+              </Link>
+            ) : (
+              <span className="educationcard__history--project">
+                {item.project}
+              </span>
+            )}
         </div>
       ))}
     </section>

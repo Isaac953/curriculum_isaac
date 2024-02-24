@@ -73,3 +73,4 @@ Proyecto creado en React.
 ## 13 Certifications
 
 - CV_21: **Componente de certificaciones completo**.
+- CV_21.5: **Agregando links a titulo, preespecialidad y nivel de Ingles**.

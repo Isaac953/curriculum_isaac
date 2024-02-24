@@ -65,3 +65,7 @@ Proyecto creado en React.
 ## 11 Backend
 
 - CV_19: **Componente habilidades backend completo**.
+
+## 12 Database
+
+- CV_20: **Componente habilidades database completo**.

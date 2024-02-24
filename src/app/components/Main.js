@@ -12,6 +12,7 @@ import { Languages } from "./cards/07_languages/Languages";
 import { Education } from "./cards/08_education/Education";
 import { Frontend } from "./cards/09_frontend/Frontend";
 import { Backend } from "./cards/10_backend/Backend";
+import { Database } from "./cards/11_database/Database";
 
 export const Main = () => {
   // const [height, setHeight] = useState(0);
@@ -82,6 +83,7 @@ export const Main = () => {
           <hr className="hr-wh"></hr>
           <Backend />
           <hr className="hr-wh"></hr>
+          <Database />
         </section>
         <section className="main__page--experience" ref={container}>
           <hr className="hr-bg margint"></hr>

@@ -14,6 +14,7 @@ import { Frontend } from "./cards/09_frontend/Frontend";
 import { Backend } from "./cards/10_backend/Backend";
 import { Database } from "./cards/11_database/Database";
 import { Certifications } from "./cards/12_certifications/Certifications";
+import { Programs } from "./cards/13_programs/Programs";
 
 export const Main = () => {
   // const [height, setHeight] = useState(0);
@@ -92,6 +93,7 @@ export const Main = () => {
           <hr className="hr-bg"></hr>
           <Certifications />
           <hr className="hr-bg"></hr>
+          <Programs />
         </section>
       </section>
     </main>

@@ -18,7 +18,7 @@
       @include description;
       .item__linkb {
         cursor: pointer;
-        text-decoration: underline;
+        text-decoration: none;
         color: $textColor2;
         @include flex-row;
         @include description;

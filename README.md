@@ -61,3 +61,7 @@ Proyecto creado en React.
 ## 10 Frontend
 
 - CV_18: **Componente habilidades frontend completo**.
+
+## 11 Backend
+
+- CV_19: **Componente habilidades backend completo**.

@@ -1,0 +1,51 @@
+@import "/src/app/styles/Flex.scss";
+@import "/src/app/styles/Colors.scss";
+@import "/src/app/styles/MainCards.scss";
+
+.backendcard {
+  @include flex-column;
+  @include cards;
+  &__title {
+    @include subtitles;
+  }
+  &__list {
+    width: inherit;
+    @include flex-column;
+    list-style: disc;
+    align-items: flex-start; 
+    margin-left: 26px;
+    &--item {
+      @include description;
+    }
+  }
+}
+
+/* Start Media Queries Screens 768px and 1023px */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .backendcard {
+        &__list{
+          margin-left: 20px;
+        }
+    }
+  }
+  
+  /* End Media Queries Screens 768px and 1023px */
+  
+  /* Start Media Queries Screens 767px */
+  @media screen and (max-width: 767px) {
+    .backendcard {
+      &__list{
+        margin-left: 14px;
+      }
+    }
+  }
+  
+  /* End Media Queries Screens 767px */
+  
+  @media print {
+    .backendcard {
+      &__list{
+        margin-left: 24px;
+      }
+    }
+  }

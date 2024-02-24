@@ -11,6 +11,7 @@ import { Works } from "./cards/06_works/Works";
 import { Languages } from "./cards/07_languages/Languages";
 import { Education } from "./cards/08_education/Education";
 import { Frontend } from "./cards/09_frontend/Frontend";
+import { Backend } from "./cards/10_backend/Backend";
 
 export const Main = () => {
   // const [height, setHeight] = useState(0);
@@ -78,6 +79,8 @@ export const Main = () => {
         <section className="main__page--contact">
           <hr className="hr-wh margint"></hr>
           <Frontend />
+          <hr className="hr-wh"></hr>
+          <Backend />
           <hr className="hr-wh"></hr>
         </section>
         <section className="main__page--experience" ref={container}>

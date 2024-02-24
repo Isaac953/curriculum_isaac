@@ -69,3 +69,7 @@ Proyecto creado en React.
 ## 12 Database
 
 - CV_20: **Componente habilidades database completo**.
+
+## 13 Certifications
+
+- CV_21: **Componente de certificaciones completo**.

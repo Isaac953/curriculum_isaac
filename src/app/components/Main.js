@@ -13,6 +13,7 @@ import { Education } from "./cards/08_education/Education";
 import { Frontend } from "./cards/09_frontend/Frontend";
 import { Backend } from "./cards/10_backend/Backend";
 import { Database } from "./cards/11_database/Database";
+import { Certifications } from "./cards/12_certifications/Certifications";
 
 export const Main = () => {
   // const [height, setHeight] = useState(0);
@@ -88,6 +89,8 @@ export const Main = () => {
         <section className="main__page--experience" ref={container}>
           <hr className="hr-bg margint"></hr>
           <Education />
+          <hr className="hr-bg"></hr>
+          <Certifications />
           <hr className="hr-bg"></hr>
         </section>
       </section>

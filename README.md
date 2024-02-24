@@ -57,3 +57,7 @@ Proyecto creado en React.
 ## 09 Education
 
 - CV_17: **Componente de education completado con la información**.
+
+## 10 Frontend
+
+- CV_18: **Componente habilidades frontend completo**.

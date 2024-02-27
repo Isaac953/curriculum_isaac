@@ -78,3 +78,7 @@ Proyecto creado en React.
 ## 14 Programs
 
 - CV_22: **Componente de programas completo**.
+
+## 15 Upgrades
+
+- UP_01: **Agregando función y boton para imprimir PDF**.

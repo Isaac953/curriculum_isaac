@@ -12,14 +12,28 @@
 
 /*Start Header Styles*/
 .header {
-  height: 80px;
+  height: 95px;
   background-color: $headerColor;
   justify-content: center;
   @include flex-column;
+  justify-content: space-evenly;
   &__title {
     font-size: 28px;
     color: $textColor;
     font-weight: bold;
+  }
+  &__btn {
+    background-color: $btnprint;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 11px 9px;
+    font-size: 16px;
+    transition: .5s;
+    cursor: pointer;
+  }
+  &__btn:hover {
+    background-color: $btnprinth;
   }
 }
 
@@ -100,10 +114,14 @@
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   /*Start Header Styles*/
   .header {
-    height: 75px;
+    height: 90px;
 
     &__title {
       font-size: 26px;
+    }
+    &__btn {
+      padding: 9px 7px;
+      font-size: 14px;
     }
   }
 
@@ -154,10 +172,14 @@
 @media screen and (max-width: 767px) {
   /*Start Header Styles*/
   .header {
-    height: 70px;
+    height: 80px;
 
     &__title {
       font-size: 24px;
+    }
+    &__btn {
+      padding: 7px 5px;
+      font-size: 12px;
     }
   }
 

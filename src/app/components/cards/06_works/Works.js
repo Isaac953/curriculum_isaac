@@ -160,10 +160,6 @@ export const Works = () => {
       ],
     },
   ];
-
-  // for(const item of expecienceData[1].activities){
-  //   console.log(item.tasks)
-  //   }
   return (
     <section className="workscard">
       <h2 className="workscard__title">{title}</h2>

@@ -15,11 +15,11 @@ export const Works = () => {
       activities: [
         {
           idt: 1,
-          tasks: "Elaboración del diagrama Entidad-Relación (ER) de la base de datos.",
+          tasks: "Elaborar un diagrama entidad-relación (ER) de la base de datos MySQL.",
         },
         {
           idt: 2,
-          tasks: "Migración de datos mediante la importación de archivos CSV a MySQL.",
+          tasks: "Migrar los datos mediante la importación de archivos CSV a MySQL.",
         },
         {
           idt: 3,
@@ -28,12 +28,12 @@ export const Works = () => {
         },
         {
           idt: 4,
-          tasks: "Desarrollar las funciones para facturar, cotizar y ajustar inventario.",
+          tasks: "Desarrollar las funciones del sistema para facturación e inventario.",
         },
         {
           idt: 5,
           tasks:
-            "Instalación de aplicación y base de datos en el servidor para implementación.",
+            "Instalar la aplicación y base de datos en el servidor para la implementación.",
           styleList: "item-bottom",
         },
       ],
@@ -56,24 +56,24 @@ export const Works = () => {
       activities: [
         {
           idt: 1,
-          tasks: "Migración de datos con PHP de CSV a PostgreSQL.",
+          tasks: "Migrar los datos con PHP de archivos CSV a PostgreSQL.",
         },
         {
           idt: 2,
-          tasks: "Capacitación al equipo de usuarios.",
+          tasks: "Capacitar al equipo de usuarios para el uso de la aplicación.",
         },
         {
           idt: 3,
-          tasks: "Integración de reportes gráficos con FusionChartz",
+          tasks: "Agregar un módulo de reportes de tipo cuadro y gráficos con FusionCharts.",
         },
         {
           idt: 4,
           tasks:
-            "Implementación de actualizaciones desde el servidor.",
+            "Implementar las actualizaciones de la aplicación web desde el servidor.",
         },
         {
           idt: 5,
-          tasks: "Integración de botones para exportar reportes a PDF y Excel.",
+          tasks: "Incluir botones para exportar reportes a PDF y Excel.",
           styleList: "item-bottom",
         },
 
@@ -110,7 +110,7 @@ export const Works = () => {
         {
           idt: 4,
           tasks:
-            "Programar gráficos lineales y de dona en JavaScript con HighChartz.",
+            "Programar gráficos lineales y de dona en JavaScript con Highcharts.",
         },
         {
           idt: 5,
@@ -130,21 +130,21 @@ export const Works = () => {
       activities: [
         {
           idt: 1,
-          tasks: "Diseñar diagramas de caso de uso.",
+          tasks: "Diseñar diagramas de caso de uso para especificar procesos.",
         },
         {
           idt: 2,
-          tasks: "Crear diagramas de entidad-relación.",
+          tasks: "Crear diagramas de entidad-relación (ER) de la base de datos SQL Server.",
         },
         {
           idt: 3,
           tasks:
-            "Programar vistas y funciones del sistema con HTML, CSS y PHP.",
+            "Diseñar vistas y formularios de la aplicación web con HTML y CSS.",
         },
         {
           idt: 4,
           tasks:
-            "Definir funciones específicas del sistema según roles de usuario.",
+            "Programar funciones especificas con PHP según roles de usuario.",
         },
         {
           idt: 5,

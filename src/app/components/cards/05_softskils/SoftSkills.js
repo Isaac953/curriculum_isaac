@@ -7,27 +7,27 @@ export const SoftSkills = () => {
   let softSkillsData = [
     {
       id: 1,
-      description: "Trabajo en equipo",
+      description: "Capacidad de análisis",
     },
     {
       id: 2,
-      description: "Proactivo",
+      description: "Orientado a objetivos",
     },
     {
       id: 3,
-      description: "Capacidad de analisis",
+      description: "Trabajo en equipo",
     },
     {
       id: 4,
-      description: "Responsable",
-    },
-    {
-      id: 5,
       description: "Toma de decisiones",
     },
     {
+      id: 5,
+      description: "Proactivo",
+    },
+    {
       id: 6,
-      description: "Orientado a Objetivos",
+      description: "Responsable",
     },
   ];
   return (

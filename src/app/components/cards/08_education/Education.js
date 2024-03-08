@@ -51,14 +51,15 @@ let educationData = [
 
           {/* url Hidden no exist */}
           {item.url ? (
+            <span className="educationcard__history--project">
               <Link
                 href={{ pathname: item.url }}
-                className="educationcard__history--project"
                 target="_blank"
                 title={item.project}
               >
                 {item.project}
               </Link>
+              </span>
             ) : (
               <span className="educationcard__history--project">
                 {item.project}

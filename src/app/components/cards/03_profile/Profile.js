@@ -10,15 +10,14 @@ export const Profile = () => {
   return (
     <section className="profilecard">
       <span className="profilecard__name">{profName}</span>
+      <span className="profilecard__title">
       <Link
         href={{ pathname: url }}
-        className="profilecard__title"
         target="_blank"
         title={profTitle}
       >
         {profTitle}
-      </Link>
-      {/* <span className="profilecard__title">{profTitle}</span> */}
+      </Link></span>
     </section>
   );
 };

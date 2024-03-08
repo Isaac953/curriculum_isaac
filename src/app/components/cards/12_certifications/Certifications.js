@@ -81,7 +81,7 @@ export const Certifications = () => {
     },
     {
         id: 15,
-        description: "Curso Introducción a terminal y línea de comandos",
+        description: "Curso Introducción a terminal y línea de comandos.",
         url: "https://drive.google.com/file/d/1yiZG6-HjwJ9gY0Lrt_TFMrpPG4E7-53i/view",
       },
   ];
@@ -94,7 +94,8 @@ export const Certifications = () => {
           <Link href={{ pathname: item.url }}
                 className="item__linkb"
                 target="_blank"
-                title={item.description}>{item.description}</Link>
+                title={item.description}>{item.description}
+          </Link>
           </li>
         ))}
       </ul>

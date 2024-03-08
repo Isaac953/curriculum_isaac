@@ -55,7 +55,7 @@ export const Contact = () => {
       <ul className="contactcard__list">
         {contactData.map((item) => (
           <li key={item.id} className="contactcard__list--item">
-          {/* url Hidden no exist */}
+            {/* url Hidden no exist */}
             {item.url ? (
               <Link
                 href={{ pathname: item.url }}

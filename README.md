@@ -82,3 +82,4 @@ Proyecto creado en React.
 ## 15 Upgrades
 
 - UP_01: **Agregando función y boton para imprimir PDF**.
+- UP_02: **Mejora de redacción de experiencias laborales**.
